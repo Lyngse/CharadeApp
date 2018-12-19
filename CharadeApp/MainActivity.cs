@@ -9,6 +9,7 @@ using System;
 using Android.Views;
 using Android.Content;
 using Android.Content.PM;
+using Newtonsoft.Json;
 
 namespace CharadeApp
 {
@@ -19,9 +20,9 @@ namespace CharadeApp
         RecyclerView.LayoutManager layoutManager;
         Adapter adapter;
         List<Category> categories;
-        List<string> customItems;
         GetCategoryItems gci = new GetCategoryItems();
         Dialog myDialog;
+        Dialog customCategoryDialog;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -29,10 +30,23 @@ namespace CharadeApp
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            //Window.DecorView.SystemUiVisibility = (StatusBarVisibility)SystemUiFlags.HideNavigation;
+            this.Window.AddFlags(WindowManagerFlags.Fullscreen);
+            this.Window.AddFlags(WindowManagerFlags.LayoutInScreen);
+            this.Window.AddFlags(WindowManagerFlags.KeepScreenOn);
+
+            //int uiOptions = (int)Window.DecorView.SystemUiVisibility;
+            //uiOptions |= (int)SystemUiFlags.LowProfile;
+            //uiOptions |= (int)SystemUiFlags.Fullscreen;
+            //uiOptions |= (int)SystemUiFlags.HideNavigation;
+            //uiOptions |= (int)SystemUiFlags.Immersive;
+            //uiOptions |= (int)SystemUiFlags.LayoutHideNavigation;
+            //uiOptions |= (int)SystemUiFlags.ImmersiveSticky;
+            //Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
 
             myDialog = new Dialog(this);
             myDialog.SetContentView(Resource.Layout.custompopup);
+            customCategoryDialog = new Dialog(this);
+            customCategoryDialog.SetContentView(Resource.Layout.custom_category_popup);
 
             recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
 
@@ -50,6 +64,8 @@ namespace CharadeApp
             categories.Add(new Category("GameOfThrones", Resource.Drawable.GoT, "Game of Thrones", gci.GameOfThronesCount(), gci.GameOfThrones()));
             categories.Add(new Category("Movies", Resource.Drawable.Movies, "Film", gci.MoviesCount(), gci.Movies()));
 
+            categories.Add(new Category("CustomCategory", Resource.Drawable.customItems, "Lav din egen kategori", gci.CustomCategoryCount(), gci.CustomCategory()));
+            
             adapter = new Adapter(categories);
             adapter.ChooseCard += OnChooseCard;
             recyclerView.SetAdapter(adapter);
@@ -59,8 +75,96 @@ namespace CharadeApp
         {
             int photoNum = position + 1;
             //Toast.MakeText(this, "Kategori nummer " + photoNum, ToastLength.Short).Show();
-            ShowPopup(categories[position]);
+            if(position == categories.Count - 1)
+            {
+                ShowCustomCategoryPopup(categories[position]);
+            }
+            else
+            {
+                ShowPopup(categories[position]);
+            }           
         }
+
+        private void UpdateCustomCategoryCount()
+        {
+            categories[categories.Count - 1].CategoryCount = gci.CustomCategoryCount();
+        }
+
+        private void ShowCustomCategoryPopup(Category category)
+        {
+            customCategoryDialog.SetContentView(Resource.Layout.custom_category_popup);
+
+            TextView txtClose;
+            Button btnStart;
+            ImageButton btnAdd;
+            EditText inputField;
+            TextView txtCardCount;
+            bool isTimedGame = true;
+
+            txtClose = (TextView)customCategoryDialog.FindViewById(Resource.Id.ccp_close);
+            btnStart = (Button)customCategoryDialog.FindViewById(Resource.Id.ccp_start);
+            btnAdd = (ImageButton)customCategoryDialog.FindViewById(Resource.Id.ccp_add);
+            inputField = (EditText)customCategoryDialog.FindViewById(Resource.Id.ccp_input);
+            txtCardCount = (TextView)customCategoryDialog.FindViewById(Resource.Id.ccp_card_count);
+
+            txtCardCount.Text = gci.CustomCategoryCount().ToString() + " kort";
+
+            Switch s = myDialog.FindViewById<Switch>(Resource.Id.time_switch);
+            s.CheckedChange += delegate (object sender, CompoundButton.CheckedChangeEventArgs e)
+            {
+                if (e.IsChecked == true)
+                {
+                    isTimedGame = true;
+                }
+                else
+                {
+                    isTimedGame = false;
+                }
+            };
+
+            btnAdd.Click += (sender, e) =>
+            {
+                if(inputField.Text != "")
+                {
+                    gci.AddCustomCategoryItem(inputField.Text);
+                    inputField.Text = "";
+                    txtCardCount.Text = gci.CustomCategoryCount().ToString() + " kort";
+                    RunOnUiThread(() =>
+                    {
+                        category.CategoryCount = gci.CustomCategoryCount();
+                        adapter.NotifyItemChanged(categories.Count - 1);
+                    });
+                }
+            };
+
+            btnStart.Click += (sender, e) =>
+            {
+                if(gci.CustomCategoryCount() > 0)
+                {
+                    var intent = new Intent(this, typeof(ActiveGameActivity));
+                    intent.PutExtra("category", category.StringId);
+                    intent.PutExtra("list", JsonConvert.SerializeObject(gci.CustomCategory()));
+                    if (isTimedGame == true)
+                    {
+                        intent.PutExtra("withTime", "true");
+                    }
+                    else
+                    {
+                        intent.PutExtra("withTime", "false");
+                    }
+                    //gci.ResetCustomCategory();
+                    StartActivity(intent);
+                }            
+            };
+
+            txtClose.Click += (o, e) =>
+            {
+                customCategoryDialog.Dismiss();
+            };
+
+            customCategoryDialog.Show();
+        }
+
 
         public void ShowPopup(Category category)
         {

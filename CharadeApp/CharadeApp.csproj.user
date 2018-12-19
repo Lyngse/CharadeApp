@@ -3,7 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>OnePlus A6003</SelectedDevice>
     <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
-    <AndroidDesignerPreferredDevice>4in WVGA %28Nexus S%29</AndroidDesignerPreferredDevice>
+    <AndroidDesignerPreferredDevice>Nexus 5</AndroidDesignerPreferredDevice>
     <ProjectView>ProjectFiles</ProjectView>
     <DefaultDevice>Android_Accelerated_x86_Oreo</DefaultDevice>
   </PropertyGroup>

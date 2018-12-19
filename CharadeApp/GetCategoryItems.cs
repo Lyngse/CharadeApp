@@ -14,7 +14,7 @@ namespace CharadeApp
 {
     public class GetCategoryItems
     {
-
+        public List<string> customCategoryItems = new List<string>();
         public GetCategoryItems()
         {
 
@@ -42,6 +42,8 @@ namespace CharadeApp
                     return Movies();
                 case "StarWars":
                     return StarWars();
+                case "CustomCategory":
+                    return CustomCategory();
                 default:
                     return new List<string>();
             }
@@ -504,6 +506,27 @@ namespace CharadeApp
         {
             var mc = StarWars();
             return mc.Count;
+        }
+
+        public void AddCustomCategoryItem(string input)
+        {
+            customCategoryItems.Add(input);
+        }
+
+        public void ResetCustomCategory()
+        {
+            customCategoryItems.Clear();
+        }
+
+        public List<string> CustomCategory()
+        {
+            return customCategoryItems;
+        }
+
+        public int CustomCategoryCount()
+        {
+            var res = CustomCategory();
+            return res.Count;
         }
 
     }

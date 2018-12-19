@@ -10,6 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Newtonsoft.Json;
 
 namespace CharadeApp
 {
@@ -31,6 +32,7 @@ namespace CharadeApp
         private TextView txtTimer;
         private bool isWithTime;
         private bool isConfirmOpen = false;
+        private List<string> customItems;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -54,8 +56,21 @@ namespace CharadeApp
                 isWithTime = false;
             }
 
+            if (categoryStringId == "CustomCategory")
+            {
+                customItems = new List<string>();
+                var ci = JsonConvert.DeserializeObject<List<string>>(Intent.GetStringExtra("list"));
+                for (int i = 0; i < ci.Count; i++)
+                {
+                    categoryItems.Add(ci[i]);
+                    customItems.Add(ci[i]);
+                }
+            }
+            else
+            {
+                categoryItems = gci.GetItems(categoryStringId);
+            }
 
-            categoryItems = gci.GetItems(categoryStringId);
             ShuffleList();
 
             this.Window.AddFlags(WindowManagerFlags.Fullscreen);
@@ -202,6 +217,8 @@ namespace CharadeApp
 
                 finishedGameDialog.SetCanceledOnTouchOutside(false);
 
+                countDownTimer.Stop();
+
                 Button btnReplay;
                 Button btnMainMenu;
 
@@ -216,7 +233,17 @@ namespace CharadeApp
 
                 btnReplay.Click += (o, e) =>
                 {
-                    categoryItems = gci.GetItems(categoryStringId);
+                    if(categoryStringId == "CustomCategory")
+                    {
+                        for (int i = 0; i < customItems.Count; i++)
+                        {
+                            categoryItems.Add(customItems[i]);
+                        }
+                    }
+                    else
+                    {
+                        categoryItems = gci.GetItems(categoryStringId);
+                    }
                     ShuffleList();
                     DrawItem();
                     if(isWithTime)
