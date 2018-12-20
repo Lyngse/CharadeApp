@@ -63,9 +63,12 @@ namespace CharadeApp
             categories.Add(new Category("DisneyCharacters", Resource.Drawable.Disney, "Disney karakterer", gci.DisneyCharactersCount(), gci.DisneyCharacters()));
             categories.Add(new Category("GameOfThrones", Resource.Drawable.GoT, "Game of Thrones", gci.GameOfThronesCount(), gci.GameOfThrones()));
             categories.Add(new Category("Movies", Resource.Drawable.Movies, "Film", gci.MoviesCount(), gci.Movies()));
+            categories.Add(new Category("Professions", Resource.Drawable.professions, "Jobs", gci.ProfessionsCount(), gci.Professions()));
+            categories.Add(new Category("Brands", Resource.Drawable.brands, "Brands", gci.BrandsCount(), gci.Brands()));
 
             categories.Add(new Category("CustomCategory", Resource.Drawable.customItems, "Lav din egen kategori", gci.CustomCategoryCount(), gci.CustomCategory()));
-            
+
+
             adapter = new Adapter(categories);
             adapter.ChooseCard += OnChooseCard;
             recyclerView.SetAdapter(adapter);
@@ -83,11 +86,6 @@ namespace CharadeApp
             {
                 ShowPopup(categories[position]);
             }           
-        }
-
-        private void UpdateCustomCategoryCount()
-        {
-            categories[categories.Count - 1].CategoryCount = gci.CustomCategoryCount();
         }
 
         private void ShowCustomCategoryPopup(Category category)

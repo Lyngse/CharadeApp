@@ -44,6 +44,10 @@ namespace CharadeApp
                     return StarWars();
                 case "CustomCategory":
                     return CustomCategory();
+                case "Professions":
+                    return Professions();
+                case "Brands":
+                    return Brands();
                 default:
                     return new List<string>();
             }
@@ -464,6 +468,92 @@ namespace CharadeApp
         public List<string> Movies()
         {
             List<string> resultList = new List<string>();
+            resultList.Add("Godfather");
+            resultList.Add("The Dark Knight");
+            resultList.Add("Ringenes herre");
+            resultList.Add("Pulp Fiction");
+            resultList.Add("Fight Club");
+            resultList.Add("Forrest Gump");
+            resultList.Add("The Matrix");
+            resultList.Add("Saving Private Ryan");
+            resultList.Add("The Green Mile");
+            resultList.Add("Titanic");
+            resultList.Add("Whiplash");
+            resultList.Add("Terminator");
+            resultList.Add("Gladiator");
+            resultList.Add("The Avengers");
+            resultList.Add("Django Unchained");
+            resultList.Add("Braveheart");
+            resultList.Add("Harry Potter");
+            resultList.Add("Der Untergang");
+            resultList.Add("The Wolf of Wall Street");
+            resultList.Add("Blade Runner");
+            resultList.Add("The Notebook");
+            resultList.Add("Hacksaw Ridge");
+            resultList.Add("Jurassic Park");
+            resultList.Add("Transformers");
+            resultList.Add("Robin Hood");
+            resultList.Add("Deadpool");
+            resultList.Add("Avatar");
+            resultList.Add("Black Panther");
+            resultList.Add("The Hunger Games");
+            resultList.Add("Frozen");
+            resultList.Add("American Sniper");
+            resultList.Add("Guardians of the Galaxy");
+            resultList.Add("Skyfall");
+            resultList.Add("Twilight");
+            resultList.Add("Narnia");
+            resultList.Add("Home Alone");
+            resultList.Add("Shrek");
+            resultList.Add("Jaws");
+            resultList.Add("Ghostbusters");
+            resultList.Add("Men in Black");
+            resultList.Add("The Fast and the Furious");
+            resultList.Add("Pirates of the Caribbean");
+            resultList.Add("The Hobbit");
+            resultList.Add("Ice Age");
+            resultList.Add("The Wolverine");
+            resultList.Add("Indiana Jones");
+            resultList.Add("The Da Vinci Code");
+            resultList.Add("Suicide Squad ");
+            resultList.Add("Intouchables");
+            resultList.Add("Elf");
+            resultList.Add("Far til Fire");
+            resultList.Add("Min Søsters Børn");
+            resultList.Add("Yes Man");
+            resultList.Add("The Hangover");
+            resultList.Add("Ted");
+            resultList.Add("Kung Fu Panda");
+            resultList.Add("E.T.");
+            resultList.Add("The Breakfast Club");
+            resultList.Add("King Kong");
+            resultList.Add("Godzilla");
+            resultList.Add("Step Up");
+            resultList.Add("Spider-Man");
+            resultList.Add("High School Musical");
+            resultList.Add("Borat");
+            resultList.Add("Karate Kid");
+            resultList.Add("Back to the Future");
+            resultList.Add("Scarface");
+            resultList.Add("Mission: Impossible");
+            resultList.Add("Dia Hard");
+            resultList.Add("Dirty Dancing");
+            resultList.Add("Grease");
+            resultList.Add("Top Gun");
+            resultList.Add("Superman");
+            resultList.Add("Scream");
+            resultList.Add("Olsen Banden");
+            resultList.Add("Mean Girls");
+            resultList.Add("Politiskolen");
+            resultList.Add("Saw");
+            resultList.Add("Adams Æbler");
+            resultList.Add("De Grønne Slagtere");
+            resultList.Add("Kvinden i Buret");
+            resultList.Add("Blinkende Lygter");
+            resultList.Add("Klovn");
+            resultList.Add("Flammen og Citronen");
+            resultList.Add("De tre Musketerer");
+            resultList.Add("Klassefesten");
 
             return resultList;
         }
@@ -507,6 +597,139 @@ namespace CharadeApp
             var mc = StarWars();
             return mc.Count;
         }
+
+        public List<string> Professions()
+        {
+            List<string> resultList = new List<string>();
+            resultList.Add("Advokat");
+            resultList.Add("Murer");
+            resultList.Add("Tømrer");
+            resultList.Add("Akupuntør");
+            resultList.Add("Arkitekt");
+            resultList.Add("Arkæolog");
+            resultList.Add("Astronaut");
+            resultList.Add("Mekaniker");
+            resultList.Add("Bager");
+            resultList.Add("Bedemand");
+            resultList.Add("Politibetjent");
+            resultList.Add("Brandmand");
+            resultList.Add("Bibliotekar");
+            resultList.Add("Lærer");
+            resultList.Add("Brolægger");
+            resultList.Add("Buschauffør");
+            resultList.Add("Graver");
+            resultList.Add("Maler");
+            resultList.Add("Danser");
+            resultList.Add("Slagter");
+            resultList.Add("Dommer");
+            resultList.Add("Fodbolddommer");
+            resultList.Add("Læge");
+            resultList.Add("Sygeplejerske");
+            resultList.Add("Elektriker");
+            resultList.Add("Fysioterapeut");
+            resultList.Add("Fotograf");
+            resultList.Add("Fisker");
+            resultList.Add("Fitnessinstruktør");
+            resultList.Add("Pilot");
+            resultList.Add("Stewardesse");
+            resultList.Add("Frisør");
+            resultList.Add("It-medarbejder");
+            resultList.Add("Togfører");
+            resultList.Add("Journalist");
+            resultList.Add("Præst");
+            resultList.Add("Sanger");
+            resultList.Add("Kok");
+            resultList.Add("Politiker");
+            resultList.Add("Massør");
+            resultList.Add("Landmand");
+            resultList.Add("Bankmand");
+            resultList.Add("Metrolog");
+            resultList.Add("Soldat");
+            resultList.Add("Akrobat");
+            resultList.Add("Klovn");
+            resultList.Add("Pedel");
+            resultList.Add("Postbud");
+            resultList.Add("Pædagog");
+            resultList.Add("Jordemoder");
+            resultList.Add("Turistguide");
+            resultList.Add("Skuespiller");
+            resultList.Add("Smed");
+            resultList.Add("Fodboldspiller");
+            resultList.Add("Tandlæge");
+            resultList.Add("Tjener");
+            resultList.Add("Urmager");
+
+
+            return resultList;
+        }
+
+        public int ProfessionsCount()
+        {
+            var res = Professions();
+            return res.Count;
+        }
+
+        public List<string> Brands()
+        {
+            List<string> resultList = new List<string>();
+            resultList.Add("Apple");
+            resultList.Add("Google");
+            resultList.Add("Microsoft");
+            resultList.Add("Facebook");
+            resultList.Add("Amazon");
+            resultList.Add("Coca-Cola");
+            resultList.Add("Disney");
+            resultList.Add("Burger King");
+            resultList.Add("McDonald's");
+            resultList.Add("Redbull");
+            resultList.Add("Nike");
+            resultList.Add("BMW");
+            resultList.Add("Tuborg");
+            resultList.Add("Nescafe");
+            resultList.Add("Starbucks");
+            resultList.Add("Gucci");
+            resultList.Add("IKEA");
+            resultList.Add("Vestas");
+            resultList.Add("Lego");
+            resultList.Add("Netflix");
+            resultList.Add("Colgate");
+            resultList.Add("Rolex");
+            resultList.Add("Corona");
+            resultList.Add("Kellogg's");
+            resultList.Add("Nivea");
+            resultList.Add("Pampers");
+            resultList.Add("Visa");
+            resultList.Add("Shell");
+            resultList.Add("PlayStation");
+            resultList.Add("Tesla");
+            resultList.Add("Harley Davidson");
+            resultList.Add("Audi");
+            resultList.Add("Gilette");
+            resultList.Add("Samsung");
+            resultList.Add("Nordea");
+            resultList.Add("Prince");
+            resultList.Add("Uber");
+            resultList.Add("Bilka");
+            resultList.Add("Pandora");
+            resultList.Add("Mærsk");
+            resultList.Add("TDC");
+            resultList.Add("Carlsberg");
+            resultList.Add("Danish Crown");
+            resultList.Add("Lurpak");
+            resultList.Add("Arla");
+            resultList.Add("Tryg");
+
+            return resultList;
+        }
+
+        public int BrandsCount()
+        {
+            var res = Brands();
+            return res.Count;
+        }
+
+
+
 
         public void AddCustomCategoryItem(string input)
         {

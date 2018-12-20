@@ -161,18 +161,21 @@ namespace CharadeApp
 
         }
 
-        private void SkipItem()
+        private void SkipItem(bool fromNewRoundPopup = false)
         {
             if (categoryItems.Count > 1)
             {
-                if (isWithTime)
+                if (isWithTime && fromNewRoundPopup == false)
                 {
                     if (skips > 0)
                     {
                         ShuffleList();
                         DrawItem();
                         skips--;
-                        Toast.MakeText(this, "Du har " + skips.ToString() + " tilbage!", ToastLength.Short).Show();
+                        if (skips > 0)
+                            Toast.MakeText(this, "Du har " + skips.ToString() + " skips tilbage!", ToastLength.Short).Show();
+                        else
+                            Toast.MakeText(this, "Du har ikke flere skips tilbage!", ToastLength.Short).Show();
                     }
                     else
                     {
@@ -184,7 +187,6 @@ namespace CharadeApp
                     ShuffleList();
                     DrawItem();
                 }
-
             }           
         }
 
@@ -224,6 +226,8 @@ namespace CharadeApp
                 btnStart.Click += (o, e) =>
                 {
                     timeLeft = 60;
+                    SkipItem(true);
+                    skips = 3;
                     countDownTimer.Start();
                     txtTimer.Text = timeLeft.ToString();
                     newRoundDialog.Dismiss();
@@ -269,6 +273,7 @@ namespace CharadeApp
                     if(isWithTime)
                     {
                         timeLeft = 60;
+                        skips = 3;
                         countDownTimer.Start();
                     }
                     finishedGameDialog.Dismiss();
