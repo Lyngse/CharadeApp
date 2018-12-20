@@ -78,6 +78,15 @@ namespace CharadeApp
             this.Window.AddFlags(WindowManagerFlags.LayoutInScreen);
             this.Window.AddFlags(WindowManagerFlags.KeepScreenOn);
 
+            int uiOptions = (int)Window.DecorView.SystemUiVisibility;
+            uiOptions |= (int)SystemUiFlags.LowProfile;
+            uiOptions |= (int)SystemUiFlags.Fullscreen;
+            uiOptions |= (int)SystemUiFlags.HideNavigation;
+            uiOptions |= (int)SystemUiFlags.Immersive;
+            uiOptions |= (int)SystemUiFlags.LayoutHideNavigation;
+            uiOptions |= (int)SystemUiFlags.ImmersiveSticky;
+            Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
+
             confirmDialog = new Dialog(this);
             confirmDialog.SetContentView(Resource.Layout.back_confirm);
             finishedGameDialog = new Dialog(this);

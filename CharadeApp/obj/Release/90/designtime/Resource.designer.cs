@@ -2300,34 +2300,31 @@ namespace CharadeApp
 			public const int DisneyMovies = 2130771992;
 			
 			// aapt resource value: 0x7F010019
-			public const int DisneyMoviess = 2130771993;
+			public const int GoT = 2130771993;
 			
 			// aapt resource value: 0x7F010020
-			public const int GoT = 2130772000;
+			public const int LeagueOfLegends = 2130772000;
 			
 			// aapt resource value: 0x7F010021
-			public const int LeagueOfLegends = 2130772001;
+			public const int logo_200px = 2130772001;
 			
 			// aapt resource value: 0x7F010022
-			public const int logo_200px = 2130772002;
+			public const int logo_round_96px = 2130772002;
 			
 			// aapt resource value: 0x7F010023
-			public const int logo_round_96px = 2130772003;
+			public const int logo_round_border_96px = 2130772003;
 			
 			// aapt resource value: 0x7F010024
-			public const int logo_round_border_96px = 2130772004;
+			public const int logo_solid_48px = 2130772004;
 			
 			// aapt resource value: 0x7F010025
-			public const int logo_solid_48px = 2130772005;
+			public const int logo_solid_96px = 2130772005;
 			
 			// aapt resource value: 0x7F010026
-			public const int logo_solid_96px = 2130772006;
+			public const int MarvelCharacters = 2130772006;
 			
 			// aapt resource value: 0x7F010027
-			public const int MarvelCharacters = 2130772007;
-			
-			// aapt resource value: 0x7F010028
-			public const int Movies = 2130772008;
+			public const int Movies = 2130772007;
 			
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
@@ -2368,23 +2365,23 @@ namespace CharadeApp
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
+			// aapt resource value: 0x7F010028
+			public const int popup_background_style = 2130772008;
+			
 			// aapt resource value: 0x7F010029
-			public const int popup_background_style = 2130772009;
+			public const int professions = 2130772009;
 			
 			// aapt resource value: 0x7F010030
-			public const int professions = 2130772016;
+			public const int spinner_style = 2130772016;
 			
 			// aapt resource value: 0x7F010031
-			public const int spinner_style = 2130772017;
+			public const int splash_screen = 2130772017;
 			
 			// aapt resource value: 0x7F010032
-			public const int splash_screen = 2130772018;
+			public const int SportAthletes = 2130772018;
 			
 			// aapt resource value: 0x7F010033
-			public const int SportAthletes = 2130772019;
-			
-			// aapt resource value: 0x7F010034
-			public const int StarWars = 2130772020;
+			public const int StarWars = 2130772019;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
