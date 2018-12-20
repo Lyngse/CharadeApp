@@ -33,6 +33,7 @@ namespace CharadeApp
         private bool isWithTime;
         private bool isConfirmOpen = false;
         private List<string> customItems;
+        private int skips;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -98,6 +99,7 @@ namespace CharadeApp
                 countDownTimer.Start();
                 newRoundDialog = new Dialog(this);
                 newRoundDialog.SetContentView(Resource.Layout.new_round_popup);
+                skips = 3;
             }
             else
             {
@@ -163,9 +165,27 @@ namespace CharadeApp
         {
             if (categoryItems.Count > 1)
             {
-                ShuffleList();
-                DrawItem();
-            }
+                if (isWithTime)
+                {
+                    if (skips > 0)
+                    {
+                        ShuffleList();
+                        DrawItem();
+                        skips--;
+                        Toast.MakeText(this, "Du har " + skips.ToString() + " tilbage!", ToastLength.Short).Show();
+                    }
+                    else
+                    {
+                        Toast.MakeText(this, "Du har ikke flere skips tilbage!", ToastLength.Short).Show();
+                    }
+                }
+                else
+                {
+                    ShuffleList();
+                    DrawItem();
+                }
+
+            }           
         }
 
         private void NextItem()

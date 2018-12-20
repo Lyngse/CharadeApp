@@ -5,7 +5,7 @@
     <activity android:label="ActiveGameActivity" android:screenOrientation="landscape" android:name="md505c957a39ff7e8b5ab5ec054816e1e49.ActiveGameActivity" />
     <activity android:label="ActiveTimedGameActivity" android:screenOrientation="landscape" android:name="md505c957a39ff7e8b5ab5ec054816e1e49.ActiveTimedGameActivity" />
     <activity android:label="@string/app_name" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md505c957a39ff7e8b5ab5ec054816e1e49.MainActivity" />
-    <activity android:noHistory="true" android:theme="@style/AppTheme.Splash" android:name="md505c957a39ff7e8b5ab5ec054816e1e49.SplashActivity">
+    <activity android:icon="@drawable/logo_round_border_96px" android:noHistory="true" android:theme="@style/AppTheme.Splash" android:name="md505c957a39ff7e8b5ab5ec054816e1e49.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

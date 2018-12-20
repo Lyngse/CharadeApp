@@ -1,1 +1,1 @@
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item><color android:color="#4FC3F7" /></item><item><bitmap android:src="@drawable/bowl" android:tileMode="disabled" android:gravity="center" /></item></layer-list>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item><color android:color="#4FC3F7" /></item><item><bitmap android:src="@drawable/logo_200px" android:tileMode="disabled" android:gravity="center" /></item></layer-list>

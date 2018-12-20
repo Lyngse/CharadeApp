@@ -65,6 +65,10 @@ D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\res\drawable\btn_add_style.xml
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\res\drawable\baseline_add_white_48dp.png
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\res\drawable\baseline_add_white_36dp.png
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\res\drawable\customitems.jpg
+D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\res\layout\splash_screen.xml
+D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\res\drawable\logo_200px.png
+D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\res\drawable\logo_solid_48px.jpg
+D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\res\drawable\logo_solid_96px.jpg
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\R.cs.flag
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\R.txt
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\uploadflags.txt
@@ -105,6 +109,7 @@ D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\linksrc\System.ComponentModel.Co
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\linksrc\System.Web.Services.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\linksrc\System.Xml.Linq.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\linksrc\Mono.Security.pdb
+D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\res\drawable\logo_round_96px.png
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\android\assets\CharadeApp.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\android\assets\Mono.Android.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\android\assets\Mono.Security.pdb

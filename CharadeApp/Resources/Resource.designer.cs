@@ -2227,26 +2227,26 @@ namespace CharadeApp
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f020083
-			public const int avd_hide_password_1 = 2130837635;
+			// aapt resource value: 0x7f020088
+			public const int avd_hide_password_1 = 2130837640;
 			
-			// aapt resource value: 0x7f020084
-			public const int avd_hide_password_2 = 2130837636;
+			// aapt resource value: 0x7f020089
+			public const int avd_hide_password_2 = 2130837641;
 			
-			// aapt resource value: 0x7f020085
-			public const int avd_hide_password_3 = 2130837637;
+			// aapt resource value: 0x7f02008a
+			public const int avd_hide_password_3 = 2130837642;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f020086
-			public const int avd_show_password_1 = 2130837638;
+			// aapt resource value: 0x7f02008b
+			public const int avd_show_password_1 = 2130837643;
 			
-			// aapt resource value: 0x7f020087
-			public const int avd_show_password_2 = 2130837639;
+			// aapt resource value: 0x7f02008c
+			public const int avd_show_password_2 = 2130837644;
 			
-			// aapt resource value: 0x7f020088
-			public const int avd_show_password_3 = 2130837640;
+			// aapt resource value: 0x7f02008d
+			public const int avd_show_password_3 = 2130837645;
 			
 			// aapt resource value: 0x7f020055
 			public const int back_arrow = 2130837589;
@@ -2321,70 +2321,85 @@ namespace CharadeApp
 			public const int LeagueOfLegends = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int MarvelCharacters = 2130837613;
+			public const int logo_200px = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int Movies = 2130837614;
+			public const int logo_round_96px = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int navigation_empty_icon = 2130837615;
+			public const int logo_round_border_96px = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int notification_action_background = 2130837616;
+			public const int logo_solid_48px = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int notification_bg = 2130837617;
+			public const int logo_solid_96px = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int notification_bg_low = 2130837618;
+			public const int MarvelCharacters = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int notification_bg_low_normal = 2130837619;
+			public const int Movies = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int notification_bg_low_pressed = 2130837620;
+			public const int navigation_empty_icon = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int notification_bg_normal = 2130837621;
+			public const int notification_action_background = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int notification_bg_normal_pressed = 2130837622;
+			public const int notification_bg = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int notification_icon_background = 2130837623;
-			
-			// aapt resource value: 0x7f020081
-			public const int notification_template_icon_bg = 2130837633;
-			
-			// aapt resource value: 0x7f020082
-			public const int notification_template_icon_low_bg = 2130837634;
+			public const int notification_bg_low = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int notification_tile_bg = 2130837624;
+			public const int notification_bg_low_normal = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int notify_panel_notification_icon_bg = 2130837625;
+			public const int notification_bg_low_pressed = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int popup_background_style = 2130837626;
+			public const int notification_bg_normal = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int spinner_style = 2130837627;
+			public const int notification_bg_normal_pressed = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int splash_screen = 2130837628;
+			public const int notification_icon_background = 2130837628;
+			
+			// aapt resource value: 0x7f020086
+			public const int notification_template_icon_bg = 2130837638;
+			
+			// aapt resource value: 0x7f020087
+			public const int notification_template_icon_low_bg = 2130837639;
 			
 			// aapt resource value: 0x7f02007d
-			public const int SportAthletes = 2130837629;
+			public const int notification_tile_bg = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int StarWars = 2130837630;
+			public const int notify_panel_notification_icon_bg = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int tooltip_frame_dark = 2130837631;
+			public const int popup_background_style = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int tooltip_frame_light = 2130837632;
+			public const int spinner_style = 2130837632;
+			
+			// aapt resource value: 0x7f020081
+			public const int splash_screen = 2130837633;
+			
+			// aapt resource value: 0x7f020082
+			public const int SportAthletes = 2130837634;
+			
+			// aapt resource value: 0x7f020083
+			public const int StarWars = 2130837635;
+			
+			// aapt resource value: 0x7f020084
+			public const int tooltip_frame_dark = 2130837636;
+			
+			// aapt resource value: 0x7f020085
+			public const int tooltip_frame_light = 2130837637;
 			
 			static Drawable()
 			{
@@ -2417,8 +2432,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080037
 			public const int SYM = 2131230775;
 			
-			// aapt resource value: 0x7f0800bf
-			public const int action0 = 2131230911;
+			// aapt resource value: 0x7f0800be
+			public const int action0 = 2131230910;
 			
 			// aapt resource value: 0x7f08007c
 			public const int action_bar = 2131230844;
@@ -2441,17 +2456,17 @@ namespace CharadeApp
 			// aapt resource value: 0x7f08005a
 			public const int action_bar_title = 2131230810;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int action_container = 2131230908;
+			// aapt resource value: 0x7f0800bb
+			public const int action_container = 2131230907;
 			
 			// aapt resource value: 0x7f08007d
 			public const int action_context_bar = 2131230845;
 			
-			// aapt resource value: 0x7f0800c3
-			public const int action_divider = 2131230915;
+			// aapt resource value: 0x7f0800c2
+			public const int action_divider = 2131230914;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int action_image = 2131230909;
+			// aapt resource value: 0x7f0800bc
+			public const int action_image = 2131230908;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -2468,11 +2483,11 @@ namespace CharadeApp
 			// aapt resource value: 0x7f08005c
 			public const int action_mode_close_button = 2131230812;
 			
-			// aapt resource value: 0x7f0800be
-			public const int action_text = 2131230910;
+			// aapt resource value: 0x7f0800bd
+			public const int action_text = 2131230909;
 			
-			// aapt resource value: 0x7f0800cc
-			public const int actions = 2131230924;
+			// aapt resource value: 0x7f0800cb
+			public const int actions = 2131230923;
 			
 			// aapt resource value: 0x7f08008b
 			public const int active_game_back_btn = 2131230859;
@@ -2534,41 +2549,41 @@ namespace CharadeApp
 			// aapt resource value: 0x7f08003d
 			public const int bottom = 2131230781;
 			
-			// aapt resource value: 0x7f08009b
-			public const int btn_choose = 2131230875;
+			// aapt resource value: 0x7f08009a
+			public const int btn_choose = 2131230874;
 			
 			// aapt resource value: 0x7f080063
 			public const int buttonPanel = 2131230819;
 			
-			// aapt resource value: 0x7f0800c0
-			public const int cancel_action = 2131230912;
+			// aapt resource value: 0x7f0800bf
+			public const int cancel_action = 2131230911;
 			
-			// aapt resource value: 0x7f08009a
-			public const int card_background = 2131230874;
-			
-			// aapt resource value: 0x7f08009e
-			public const int card_count = 2131230878;
+			// aapt resource value: 0x7f080099
+			public const int card_background = 2131230873;
 			
 			// aapt resource value: 0x7f08009d
-			public const int card_title = 2131230877;
+			public const int card_count = 2131230877;
 			
-			// aapt resource value: 0x7f0800a3
-			public const int ccp_add = 2131230883;
+			// aapt resource value: 0x7f08009c
+			public const int card_title = 2131230876;
 			
 			// aapt resource value: 0x7f0800a2
-			public const int ccp_card_count = 2131230882;
-			
-			// aapt resource value: 0x7f08009f
-			public const int ccp_close = 2131230879;
+			public const int ccp_add = 2131230882;
 			
 			// aapt resource value: 0x7f0800a1
-			public const int ccp_input = 2131230881;
+			public const int ccp_card_count = 2131230881;
 			
-			// aapt resource value: 0x7f0800a5
-			public const int ccp_start = 2131230885;
+			// aapt resource value: 0x7f08009e
+			public const int ccp_close = 2131230878;
 			
 			// aapt resource value: 0x7f0800a0
-			public const int ccp_text = 2131230880;
+			public const int ccp_input = 2131230880;
+			
+			// aapt resource value: 0x7f0800a4
+			public const int ccp_start = 2131230884;
+			
+			// aapt resource value: 0x7f08009f
+			public const int ccp_text = 2131230879;
 			
 			// aapt resource value: 0x7f080045
 			public const int center = 2131230789;
@@ -2582,8 +2597,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080073
 			public const int checkbox = 2131230835;
 			
-			// aapt resource value: 0x7f0800c8
-			public const int chronometer = 2131230920;
+			// aapt resource value: 0x7f0800c7
+			public const int chronometer = 2131230919;
 			
 			// aapt resource value: 0x7f08004e
 			public const int clip_horizontal = 2131230798;
@@ -2594,29 +2609,26 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080039
 			public const int collapseActionView = 2131230777;
 			
-			// aapt resource value: 0x7f080099
-			public const int confirm_no = 2131230873;
+			// aapt resource value: 0x7f080098
+			public const int confirm_no = 2131230872;
+			
+			// aapt resource value: 0x7f080096
+			public const int confirm_text = 2131230870;
 			
 			// aapt resource value: 0x7f080097
-			public const int confirm_text = 2131230871;
+			public const int confirm_yes = 2131230871;
 			
-			// aapt resource value: 0x7f080098
-			public const int confirm_yes = 2131230872;
-			
-			// aapt resource value: 0x7f0800ab
-			public const int container = 2131230891;
+			// aapt resource value: 0x7f0800aa
+			public const int container = 2131230890;
 			
 			// aapt resource value: 0x7f080066
 			public const int contentPanel = 2131230822;
 			
-			// aapt resource value: 0x7f0800ac
-			public const int coordinator = 2131230892;
+			// aapt resource value: 0x7f0800ab
+			public const int coordinator = 2131230891;
 			
 			// aapt resource value: 0x7f08006d
 			public const int custom = 2131230829;
-			
-			// aapt resource value: 0x7f080096
-			public const int customCard = 2131230870;
 			
 			// aapt resource value: 0x7f08006c
 			public const int customPanel = 2131230828;
@@ -2627,20 +2639,20 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080060
 			public const int default_activity_button = 2131230816;
 			
-			// aapt resource value: 0x7f0800ae
-			public const int design_bottom_sheet = 2131230894;
-			
-			// aapt resource value: 0x7f0800b5
-			public const int design_menu_item_action_area = 2131230901;
+			// aapt resource value: 0x7f0800ad
+			public const int design_bottom_sheet = 2131230893;
 			
 			// aapt resource value: 0x7f0800b4
-			public const int design_menu_item_action_area_stub = 2131230900;
+			public const int design_menu_item_action_area = 2131230900;
 			
 			// aapt resource value: 0x7f0800b3
-			public const int design_menu_item_text = 2131230899;
+			public const int design_menu_item_action_area_stub = 2131230899;
 			
 			// aapt resource value: 0x7f0800b2
-			public const int design_navigation_view = 2131230898;
+			public const int design_menu_item_text = 2131230898;
+			
+			// aapt resource value: 0x7f0800b1
+			public const int design_navigation_view = 2131230897;
 			
 			// aapt resource value: 0x7f080020
 			public const int disableHome = 2131230752;
@@ -2651,8 +2663,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080030
 			public const int end = 2131230768;
 			
-			// aapt resource value: 0x7f0800ce
-			public const int end_padder = 2131230926;
+			// aapt resource value: 0x7f0800cd
+			public const int end_padder = 2131230925;
 			
 			// aapt resource value: 0x7f08003f
 			public const int enterAlways = 2131230783;
@@ -2678,8 +2690,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080048
 			public const int fill_vertical = 2131230792;
 			
-			// aapt resource value: 0x7f0800b7
-			public const int finished_round_text = 2131230903;
+			// aapt resource value: 0x7f0800b6
+			public const int finished_round_text = 2131230902;
 			
 			// aapt resource value: 0x7f080054
 			public const int @fixed = 2131230804;
@@ -2699,8 +2711,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080062
 			public const int icon = 2131230818;
 			
-			// aapt resource value: 0x7f0800cd
-			public const int icon_group = 2131230925;
+			// aapt resource value: 0x7f0800cc
+			public const int icon_group = 2131230924;
 			
 			// aapt resource value: 0x7f08003a
 			public const int ifRoom = 2131230778;
@@ -2708,11 +2720,11 @@ namespace CharadeApp
 			// aapt resource value: 0x7f08005f
 			public const int image = 2131230815;
 			
-			// aapt resource value: 0x7f08009c
-			public const int imageView1 = 2131230876;
+			// aapt resource value: 0x7f08009b
+			public const int imageView1 = 2131230875;
 			
-			// aapt resource value: 0x7f0800c9
-			public const int info = 2131230921;
+			// aapt resource value: 0x7f0800c8
+			public const int info = 2131230920;
 			
 			// aapt resource value: 0x7f080059
 			public const int italic = 2131230809;
@@ -2720,8 +2732,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080000
 			public const int item_touch_helper_previous_elevation = 2131230720;
 			
-			// aapt resource value: 0x7f0800aa
-			public const int largeLabel = 2131230890;
+			// aapt resource value: 0x7f0800a9
+			public const int largeLabel = 2131230889;
 			
 			// aapt resource value: 0x7f080049
 			public const int left = 2131230793;
@@ -2738,17 +2750,17 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800b8
-			public const int main_menu_btn = 2131230904;
+			// aapt resource value: 0x7f0800b7
+			public const int main_menu_btn = 2131230903;
 			
-			// aapt resource value: 0x7f0800d1
-			public const int masked = 2131230929;
+			// aapt resource value: 0x7f0800d2
+			public const int masked = 2131230930;
 			
-			// aapt resource value: 0x7f0800c2
-			public const int media_actions = 2131230914;
+			// aapt resource value: 0x7f0800c1
+			public const int media_actions = 2131230913;
 			
-			// aapt resource value: 0x7f0800cf
-			public const int message = 2131230927;
+			// aapt resource value: 0x7f0800d0
+			public const int message = 2131230928;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2759,11 +2771,11 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080028
 			public const int multiply = 2131230760;
 			
-			// aapt resource value: 0x7f0800d2
-			public const int my_spinner = 2131230930;
+			// aapt resource value: 0x7f0800d3
+			public const int my_spinner = 2131230931;
 			
-			// aapt resource value: 0x7f0800b1
-			public const int navigation_header_container = 2131230897;
+			// aapt resource value: 0x7f0800b0
+			public const int navigation_header_container = 2131230896;
 			
 			// aapt resource value: 0x7f08003b
 			public const int never = 2131230779;
@@ -2774,14 +2786,14 @@ namespace CharadeApp
 			// aapt resource value: 0x7f08001e
 			public const int normal = 2131230750;
 			
-			// aapt resource value: 0x7f0800cb
-			public const int notification_background = 2131230923;
-			
-			// aapt resource value: 0x7f0800c5
-			public const int notification_main_column = 2131230917;
+			// aapt resource value: 0x7f0800ca
+			public const int notification_background = 2131230922;
 			
 			// aapt resource value: 0x7f0800c4
-			public const int notification_main_column_container = 2131230916;
+			public const int notification_main_column = 2131230916;
+			
+			// aapt resource value: 0x7f0800c3
+			public const int notification_main_column_container = 2131230915;
 			
 			// aapt resource value: 0x7f08004c
 			public const int parallax = 2131230796;
@@ -2795,14 +2807,14 @@ namespace CharadeApp
 			// aapt resource value: 0x7f08004d
 			public const int pin = 2131230797;
 			
-			// aapt resource value: 0x7f0800a6
-			public const int popup_close = 2131230886;
-			
-			// aapt resource value: 0x7f0800a8
-			public const int popup_start = 2131230888;
+			// aapt resource value: 0x7f0800a5
+			public const int popup_close = 2131230885;
 			
 			// aapt resource value: 0x7f0800a7
-			public const int popup_title = 2131230887;
+			public const int popup_start = 2131230887;
+			
+			// aapt resource value: 0x7f0800a6
+			public const int popup_title = 2131230886;
 			
 			// aapt resource value: 0x7f080006
 			public const int progress_circular = 2131230726;
@@ -2819,11 +2831,11 @@ namespace CharadeApp
 			// aapt resource value: 0x7f08004a
 			public const int right = 2131230794;
 			
-			// aapt resource value: 0x7f0800ca
-			public const int right_icon = 2131230922;
+			// aapt resource value: 0x7f0800c9
+			public const int right_icon = 2131230921;
 			
-			// aapt resource value: 0x7f0800c6
-			public const int right_side = 2131230918;
+			// aapt resource value: 0x7f0800c5
+			public const int right_side = 2131230917;
 			
 			// aapt resource value: 0x7f08000c
 			public const int save_image_matrix = 2131230732;
@@ -2897,14 +2909,14 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080025
 			public const int showTitle = 2131230757;
 			
-			// aapt resource value: 0x7f0800a9
-			public const int smallLabel = 2131230889;
-			
-			// aapt resource value: 0x7f0800b0
-			public const int snackbar_action = 2131230896;
+			// aapt resource value: 0x7f0800a8
+			public const int smallLabel = 2131230888;
 			
 			// aapt resource value: 0x7f0800af
-			public const int snackbar_text = 2131230895;
+			public const int snackbar_action = 2131230895;
+			
+			// aapt resource value: 0x7f0800ae
+			public const int snackbar_text = 2131230894;
 			
 			// aapt resource value: 0x7f080043
 			public const int snap = 2131230787;
@@ -2924,20 +2936,26 @@ namespace CharadeApp
 			// aapt resource value: 0x7f08002c
 			public const int src_over = 2131230764;
 			
+			// aapt resource value: 0x7f0800ce
+			public const int ss_logo = 2131230926;
+			
+			// aapt resource value: 0x7f0800cf
+			public const int ss_title = 2131230927;
+			
 			// aapt resource value: 0x7f08004b
 			public const int start = 2131230795;
 			
-			// aapt resource value: 0x7f0800b9
-			public const int start_new_game_btn = 2131230905;
-			
-			// aapt resource value: 0x7f0800bb
-			public const int start_new_round_btn = 2131230907;
+			// aapt resource value: 0x7f0800b8
+			public const int start_new_game_btn = 2131230904;
 			
 			// aapt resource value: 0x7f0800ba
-			public const int start_new_round_text = 2131230906;
+			public const int start_new_round_btn = 2131230906;
 			
-			// aapt resource value: 0x7f0800c1
-			public const int status_bar_latest_event_content = 2131230913;
+			// aapt resource value: 0x7f0800b9
+			public const int start_new_round_text = 2131230905;
+			
+			// aapt resource value: 0x7f0800c0
+			public const int status_bar_latest_event_content = 2131230912;
 			
 			// aapt resource value: 0x7f080076
 			public const int submenuarrow = 2131230838;
@@ -2963,8 +2981,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080069
 			public const int textSpacerNoTitle = 2131230825;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int text_input_password_toggle = 2131230902;
+			// aapt resource value: 0x7f0800b5
+			public const int text_input_password_toggle = 2131230901;
 			
 			// aapt resource value: 0x7f080014
 			public const int textinput_counter = 2131230740;
@@ -2972,11 +2990,11 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080015
 			public const int textinput_error = 2131230741;
 			
-			// aapt resource value: 0x7f0800c7
-			public const int time = 2131230919;
+			// aapt resource value: 0x7f0800c6
+			public const int time = 2131230918;
 			
-			// aapt resource value: 0x7f0800a4
-			public const int time_switch = 2131230884;
+			// aapt resource value: 0x7f0800a3
+			public const int time_switch = 2131230883;
 			
 			// aapt resource value: 0x7f08001c
 			public const int title = 2131230748;
@@ -2993,8 +3011,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7f08006e
 			public const int topPanel = 2131230830;
 			
-			// aapt resource value: 0x7f0800ad
-			public const int touch_outside = 2131230893;
+			// aapt resource value: 0x7f0800ac
+			public const int touch_outside = 2131230892;
 			
 			// aapt resource value: 0x7f08000f
 			public const int transition_current_scene = 2131230735;
@@ -3023,8 +3041,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800d0
-			public const int visible = 2131230928;
+			// aapt resource value: 0x7f0800d1
+			public const int visible = 2131230929;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -3290,10 +3308,13 @@ namespace CharadeApp
 			public const int select_dialog_singlechoice_material = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int support_simple_spinner_dropdown_item = 2130968643;
+			public const int splash_screen = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int tooltip = 2130968644;
+			public const int support_simple_spinner_dropdown_item = 2130968644;
+			
+			// aapt resource value: 0x7f040045
+			public const int tooltip = 2130968645;
 			
 			static Layout()
 			{

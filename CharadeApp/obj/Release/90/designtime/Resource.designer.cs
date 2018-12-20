@@ -2303,10 +2303,25 @@ namespace CharadeApp
 			public const int LeagueOfLegends = 2130771993;
 			
 			// aapt resource value: 0x7F010020
-			public const int MarvelCharacters = 2130772000;
+			public const int logo_200px = 2130772000;
 			
 			// aapt resource value: 0x7F010021
-			public const int Movies = 2130772001;
+			public const int logo_round_96px = 2130772001;
+			
+			// aapt resource value: 0x7F010022
+			public const int logo_round_border_96px = 2130772002;
+			
+			// aapt resource value: 0x7F010023
+			public const int logo_solid_48px = 2130772003;
+			
+			// aapt resource value: 0x7F010024
+			public const int logo_solid_96px = 2130772004;
+			
+			// aapt resource value: 0x7F010025
+			public const int MarvelCharacters = 2130772005;
+			
+			// aapt resource value: 0x7F010026
+			public const int Movies = 2130772006;
 			
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
@@ -2347,20 +2362,20 @@ namespace CharadeApp
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010022
-			public const int popup_background_style = 2130772002;
+			// aapt resource value: 0x7F010027
+			public const int popup_background_style = 2130772007;
 			
-			// aapt resource value: 0x7F010023
-			public const int spinner_style = 2130772003;
+			// aapt resource value: 0x7F010028
+			public const int spinner_style = 2130772008;
 			
-			// aapt resource value: 0x7F010024
-			public const int splash_screen = 2130772004;
+			// aapt resource value: 0x7F010029
+			public const int splash_screen = 2130772009;
 			
-			// aapt resource value: 0x7F010025
-			public const int SportAthletes = 2130772005;
+			// aapt resource value: 0x7F010030
+			public const int SportAthletes = 2130772016;
 			
-			// aapt resource value: 0x7F010026
-			public const int StarWars = 2130772006;
+			// aapt resource value: 0x7F010031
+			public const int StarWars = 2130772017;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
@@ -2489,8 +2504,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7F0C001A
 			public const int bottom = 2131492890;
 			
-			// aapt resource value: 0x7F020019
-			public const int btn_choose = 2130837529;
+			// aapt resource value: 0x7F020018
+			public const int btn_choose = 2130837528;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -2498,32 +2513,32 @@ namespace CharadeApp
 			// aapt resource value: 0x7F0C001C
 			public const int cancel_action = 2131492892;
 			
-			// aapt resource value: 0x7F020018
-			public const int card_background = 2130837528;
-			
-			// aapt resource value: 0x7F020022
-			public const int card_count = 2130837538;
+			// aapt resource value: 0x7F020017
+			public const int card_background = 2130837527;
 			
 			// aapt resource value: 0x7F020021
-			public const int card_title = 2130837537;
+			public const int card_count = 2130837537;
 			
-			// aapt resource value: 0x7F020031
-			public const int ccp_add = 2130837553;
+			// aapt resource value: 0x7F020020
+			public const int card_title = 2130837536;
 			
 			// aapt resource value: 0x7F020030
-			public const int ccp_card_count = 2130837552;
-			
-			// aapt resource value: 0x7F020027
-			public const int ccp_close = 2130837543;
+			public const int ccp_add = 2130837552;
 			
 			// aapt resource value: 0x7F020029
-			public const int ccp_input = 2130837545;
+			public const int ccp_card_count = 2130837545;
 			
-			// aapt resource value: 0x7F020032
-			public const int ccp_start = 2130837554;
+			// aapt resource value: 0x7F020026
+			public const int ccp_close = 2130837542;
 			
 			// aapt resource value: 0x7F020028
-			public const int ccp_text = 2130837544;
+			public const int ccp_input = 2130837544;
+			
+			// aapt resource value: 0x7F020031
+			public const int ccp_start = 2130837553;
+			
+			// aapt resource value: 0x7F020027
+			public const int ccp_text = 2130837543;
 			
 			// aapt resource value: 0x7F0C001D
 			public const int center = 2131492893;
@@ -2534,14 +2549,14 @@ namespace CharadeApp
 			// aapt resource value: 0x7F0C0008
 			public const int chronometer = 2131492872;
 			
-			// aapt resource value: 0x7F020017
-			public const int confirm_no = 2130837527;
+			// aapt resource value: 0x7F020016
+			public const int confirm_no = 2130837526;
+			
+			// aapt resource value: 0x7F020014
+			public const int confirm_text = 2130837524;
 			
 			// aapt resource value: 0x7F020015
-			public const int confirm_text = 2130837525;
-			
-			// aapt resource value: 0x7F020016
-			public const int confirm_yes = 2130837526;
+			public const int confirm_yes = 2130837525;
 			
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
@@ -2554,9 +2569,6 @@ namespace CharadeApp
 			
 			// aapt resource value: 0x7F0C0023
 			public const int custom = 2131492899;
-			
-			// aapt resource value: 0x7F020014
-			public const int customCard = 2130837524;
 			
 			// aapt resource value: 0x7F0C0024
 			public const int customPanel = 2131492900;
@@ -2600,8 +2612,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7F0C0031
 			public const int fill = 2131492913;
 			
-			// aapt resource value: 0x7F020033
-			public const int finished_round_text = 2130837555;
+			// aapt resource value: 0x7F020032
+			public const int finished_round_text = 2130837554;
 			
 			// aapt resource value: 0x7F0C0032
 			public const int @fixed = 2131492914;
@@ -2624,8 +2636,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F020020
-			public const int imageView1 = 2130837536;
+			// aapt resource value: 0x7F020019
+			public const int imageView1 = 2130837529;
 			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
@@ -2654,8 +2666,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
 			
-			// aapt resource value: 0x7F020034
-			public const int main_menu_btn = 2130837556;
+			// aapt resource value: 0x7F020033
+			public const int main_menu_btn = 2130837555;
 			
 			// aapt resource value: 0x7F0C0042
 			public const int masked = 2131492930;
@@ -2705,14 +2717,14 @@ namespace CharadeApp
 			// aapt resource value: 0x7F0C0050
 			public const int pin = 2131492944;
 			
+			// aapt resource value: 0x7F020022
+			public const int popup_close = 2130837538;
+			
+			// aapt resource value: 0x7F020025
+			public const int popup_start = 2130837541;
+			
 			// aapt resource value: 0x7F020023
-			public const int popup_close = 2130837539;
-			
-			// aapt resource value: 0x7F020026
-			public const int popup_start = 2130837542;
-			
-			// aapt resource value: 0x7F020024
-			public const int popup_title = 2130837540;
+			public const int popup_title = 2130837539;
 			
 			// aapt resource value: 0x7F0C0051
 			public const int progress_circular = 2131492945;
@@ -2819,17 +2831,23 @@ namespace CharadeApp
 			// aapt resource value: 0x7F0C0072
 			public const int src_over = 2131492978;
 			
+			// aapt resource value: 0x7F020037
+			public const int ss_logo = 2130837559;
+			
+			// aapt resource value: 0x7F020038
+			public const int ss_title = 2130837560;
+			
 			// aapt resource value: 0x7F0C0073
 			public const int start = 2131492979;
 			
-			// aapt resource value: 0x7F020035
-			public const int start_new_game_btn = 2130837557;
-			
-			// aapt resource value: 0x7F020037
-			public const int start_new_round_btn = 2130837559;
+			// aapt resource value: 0x7F020034
+			public const int start_new_game_btn = 2130837556;
 			
 			// aapt resource value: 0x7F020036
-			public const int start_new_round_text = 2130837558;
+			public const int start_new_round_btn = 2130837558;
+			
+			// aapt resource value: 0x7F020035
+			public const int start_new_round_text = 2130837557;
 			
 			// aapt resource value: 0x7F0C0074
 			public const int status_bar_latest_event_content = 2131492980;
@@ -2870,8 +2888,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7F0C0019
 			public const int time = 2131492889;
 			
-			// aapt resource value: 0x7F020025
-			public const int time_switch = 2130837541;
+			// aapt resource value: 0x7F020024
+			public const int time_switch = 2130837540;
 			
 			// aapt resource value: 0x7F0C001A
 			public const int title = 2131492890;
@@ -3177,6 +3195,9 @@ namespace CharadeApp
 			
 			// aapt resource value: 0x7F0F003A
 			public const int select_dialog_singlechoice_material = 2131689530;
+			
+			// aapt resource value: 0x7F030011
+			public const int splash_screen = 2130903057;
 			
 			// aapt resource value: 0x7F0F003B
 			public const int support_simple_spinner_dropdown_item = 2131689531;

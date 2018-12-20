@@ -14,7 +14,7 @@ using Android.Widget;
 
 namespace CharadeApp
 {
-    [Activity(Theme = "@style/AppTheme.Splash", MainLauncher = true, NoHistory = true)]
+    [Activity(Theme = "@style/AppTheme.Splash", Icon = "@drawable/logo_round_border_96px", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity
     {
         static readonly string TAG = "X:" + typeof(SplashActivity).Name;
