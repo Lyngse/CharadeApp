@@ -14,7 +14,7 @@ using Android.Widget;
 
 namespace CharadeApp
 {
-    [Activity(Theme = "@style/AppTheme.Splash", Icon = "@drawable/logo_round_border_96px", MainLauncher = true, NoHistory = true)]
+    [Activity(Theme = "@style/AppTheme.Splash", Icon = "@drawable/logo_round_border", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity
     {
         static readonly string TAG = "X:" + typeof(SplashActivity).Name;
@@ -22,6 +22,19 @@ namespace CharadeApp
         public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
         {
             base.OnCreate(savedInstanceState, persistentState);
+
+            this.Window.AddFlags(WindowManagerFlags.Fullscreen);
+            this.Window.AddFlags(WindowManagerFlags.LayoutInScreen);
+            this.Window.AddFlags(WindowManagerFlags.KeepScreenOn);
+
+            int uiOptions = (int)Window.DecorView.SystemUiVisibility;
+            uiOptions |= (int)SystemUiFlags.LowProfile;
+            uiOptions |= (int)SystemUiFlags.Fullscreen;
+            uiOptions |= (int)SystemUiFlags.HideNavigation;
+            uiOptions |= (int)SystemUiFlags.Immersive;
+            uiOptions |= (int)SystemUiFlags.LayoutHideNavigation;
+            uiOptions |= (int)SystemUiFlags.ImmersiveSticky;
+            Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
 
             Log.Debug(TAG, "SplashActivity.OnCreate");
 
@@ -38,6 +51,7 @@ namespace CharadeApp
         // Simulates background work that happens behind the splash screen
         async void SimulateStartup()
         {
+
             Log.Debug(TAG, "Performing some startup work that takes a bit of time.");
             await Task.Delay(1000); // Simulate a bit of startup work.
             Log.Debug(TAG, "Startup work is finished - starting MainActivity.");

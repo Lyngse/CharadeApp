@@ -1,2 +1,2 @@
 android.app.Application
-CharadeApp.CharadeApp
+margretheskal.margretheskal

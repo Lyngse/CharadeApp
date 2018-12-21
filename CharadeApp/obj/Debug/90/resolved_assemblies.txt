@@ -1,4 +1,4 @@
-D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\android\assets\CharadeApp.dll
+D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\android\assets\margretheskal.dll
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\android\assets\Java.Interop.dll
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\android\assets\Mono.Android.dll
 D:\Projekter\CharadeApp\CharadeApp\obj\Debug\90\android\assets\mscorlib.dll

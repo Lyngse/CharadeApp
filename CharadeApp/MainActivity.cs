@@ -56,9 +56,9 @@ namespace CharadeApp
 
             categories = new List<Category>();
             categories.Add(new Category("LeagueOfLegends", Resource.Drawable.LeagueOfLegends, "League of Legends", gci.LeagueOfLegendsCount(), gci.LeagueOfLegends()));
-            categories.Add(new Category("MarvelCharacters", Resource.Drawable.MarvelCharacters, "Marvel karakterer", gci.MarvelCharactersCount(), gci.MarvelCharacters()));
-            categories.Add(new Category("SportAthletes", Resource.Drawable.SportAthletes, "Sports atleter", gci.SportAthletesCount(), gci.SportAthletes()));
-            categories.Add(new Category("StarWars", Resource.Drawable.StarWars, "Star Wars", gci.StarWarsCount(), gci.StarWars()));
+            categories.Add(new Category("MarvelCharacters", Resource.Drawable.Marvel, "Marvel karakterer", gci.MarvelCharactersCount(), gci.MarvelCharacters()));
+            categories.Add(new Category("SportAthletes", Resource.Drawable.Sport, "Sports atleter", gci.SportAthletesCount(), gci.SportAthletes()));
+            categories.Add(new Category("StarWars", Resource.Drawable.Yoda, "Star Wars", gci.StarWarsCount(), gci.StarWars()));
             categories.Add(new Category("DisneyMoviesAndShows", Resource.Drawable.DisneyMovies, "Disney film og serier", gci.DisneyMoviesAndShowsCount(), gci.DisneyMoviesAndShows()));
             categories.Add(new Category("DisneyCharacters", Resource.Drawable.Disney, "Disney karakterer", gci.DisneyCharactersCount(), gci.DisneyCharacters()));
             categories.Add(new Category("GameOfThrones", Resource.Drawable.GoT, "Game of Thrones", gci.GameOfThronesCount(), gci.GameOfThrones()));
