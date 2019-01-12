@@ -34,14 +34,14 @@ namespace CharadeApp
             this.Window.AddFlags(WindowManagerFlags.LayoutInScreen);
             this.Window.AddFlags(WindowManagerFlags.KeepScreenOn);
 
-            int uiOptions = (int)Window.DecorView.SystemUiVisibility;
-            uiOptions |= (int)SystemUiFlags.LowProfile;
-            uiOptions |= (int)SystemUiFlags.Fullscreen;
-            uiOptions |= (int)SystemUiFlags.HideNavigation;
-            uiOptions |= (int)SystemUiFlags.Immersive;
-            uiOptions |= (int)SystemUiFlags.LayoutHideNavigation;
-            uiOptions |= (int)SystemUiFlags.ImmersiveSticky;
-            Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
+            //int uiOptions = (int)Window.DecorView.SystemUiVisibility;
+            //uiOptions |= (int)SystemUiFlags.LowProfile;
+            //uiOptions |= (int)SystemUiFlags.Fullscreen;
+            //uiOptions |= (int)SystemUiFlags.HideNavigation;
+            //uiOptions |= (int)SystemUiFlags.Immersive;
+            //uiOptions |= (int)SystemUiFlags.LayoutHideNavigation;
+            //uiOptions |= (int)SystemUiFlags.ImmersiveSticky;
+            //Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
 
             myDialog = new Dialog(this);
             myDialog.SetContentView(Resource.Layout.custompopup);
@@ -55,14 +55,15 @@ namespace CharadeApp
             recyclerView.SetLayoutManager(layoutManager);
 
             categories = new List<Category>();
-            categories.Add(new Category("LeagueOfLegends", Resource.Drawable.LeagueOfLegends, "League of Legends", gci.LeagueOfLegendsCount(), gci.LeagueOfLegends()));
-            categories.Add(new Category("MarvelCharacters", Resource.Drawable.Marvel, "Marvel karakterer", gci.MarvelCharactersCount(), gci.MarvelCharacters()));
-            categories.Add(new Category("SportAthletes", Resource.Drawable.Sport, "Sports atleter", gci.SportAthletesCount(), gci.SportAthletes()));
-            categories.Add(new Category("StarWars", Resource.Drawable.Yoda, "Star Wars", gci.StarWarsCount(), gci.StarWars()));
-            categories.Add(new Category("DisneyMoviesAndShows", Resource.Drawable.DisneyMovies, "Disney film og serier", gci.DisneyMoviesAndShowsCount(), gci.DisneyMoviesAndShows()));
-            categories.Add(new Category("DisneyCharacters", Resource.Drawable.Disney, "Disney karakterer", gci.DisneyCharactersCount(), gci.DisneyCharacters()));
-            categories.Add(new Category("GameOfThrones", Resource.Drawable.GoT, "Game of Thrones", gci.GameOfThronesCount(), gci.GameOfThrones()));
+            categories.Add(new Category("Marvel", Resource.Drawable.Marvel, "Marvel", gci.MarvelCount(), gci.Marvel()));
+            categories.Add(new Category("HarryPotter", Resource.Drawable.harry_potter, "Harry Potter", gci.HarryPotterCount(), gci.HarryPotter()));
             categories.Add(new Category("Movies", Resource.Drawable.Movies, "Film", gci.MoviesCount(), gci.Movies()));
+            categories.Add(new Category("SportAthletes", Resource.Drawable.Sport, "Sports atleter", gci.SportAthletesCount(), gci.SportAthletes()));
+            categories.Add(new Category("Disney", Resource.Drawable.DisneyMovies, "Disney", gci.DisneyCount(), gci.Disney()));
+            categories.Add(new Category("StarWars", Resource.Drawable.Yoda, "Star Wars", gci.StarWarsCount(), gci.StarWars()));
+            categories.Add(new Category("LeagueOfLegends", Resource.Drawable.LeagueOfLegends, "League of Legends", gci.LeagueOfLegendsCount(), gci.LeagueOfLegends()));
+            //categories.Add(new Category("DisneyCharacters", Resource.Drawable.Disney, "Disney karakterer", gci.DisneyCharactersCount(), gci.DisneyCharacters()));
+            categories.Add(new Category("GameOfThrones", Resource.Drawable.GoT, "Game of Thrones", gci.GameOfThronesCount(), gci.GameOfThrones()));
             categories.Add(new Category("Professions", Resource.Drawable.professions, "Jobs", gci.ProfessionsCount(), gci.Professions()));
             categories.Add(new Category("Brands", Resource.Drawable.brands, "Brands", gci.BrandsCount(), gci.Brands()));
 

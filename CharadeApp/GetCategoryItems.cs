@@ -30,10 +30,10 @@ namespace CharadeApp
                     return LeagueOfLegends();
                 case "SportAthletes":
                     return SportAthletes();
-                case "MarvelCharacters":
-                    return MarvelCharacters();
-                case "DisneyMoviesAndShows":
-                    return DisneyMoviesAndShows();
+                case "Marvel":
+                    return Marvel();
+                case "Disney":
+                    return Disney();
                 case "DisneyCharacters":
                     return DisneyCharacters();
                 case "GameOfThrones":
@@ -48,6 +48,8 @@ namespace CharadeApp
                     return Professions();
                 case "Brands":
                     return Brands();
+                case "HarryPotter":
+                    return HarryPotter();
                 default:
                     return new List<string>();
             }
@@ -255,7 +257,7 @@ namespace CharadeApp
             return sa.Count;
         }
 
-        public List<string> MarvelCharacters()
+        public List<string> Marvel()
         {
             List<string> resultList = new List<string>();
 
@@ -278,7 +280,6 @@ namespace CharadeApp
             resultList.Add("Luke Cage");
             resultList.Add("Iron Fist");
             resultList.Add("Scarlet Witch");
-            resultList.Add("Cable");
             resultList.Add("War Machine");
             resultList.Add("Captain Marvel");
             resultList.Add("Quicksilver");
@@ -287,9 +288,6 @@ namespace CharadeApp
             resultList.Add("Wasp");
             resultList.Add("Falcon");
             resultList.Add("Jessica Jones");
-            resultList.Add("Harry Osborn");
-            resultList.Add("Uncle Ben");
-            resultList.Add("Aunt May");
             resultList.Add("Rocket Raccoon");
             resultList.Add("Groot");
             resultList.Add("Drax");
@@ -304,13 +302,13 @@ namespace CharadeApp
             return resultList;
         }
 
-        public int MarvelCharactersCount()
+        public int MarvelCount()
         {
-            var mc = MarvelCharacters();
+            var mc = Marvel();
             return mc.Count;
         }
 
-        public List<string> DisneyMoviesAndShows()
+        public List<string> Disney()
         {
             List<string> resultList = new List<string>();
             resultList.Add("Aladdin");
@@ -360,9 +358,9 @@ namespace CharadeApp
             return resultList;
         }
 
-        public int DisneyMoviesAndShowsCount()
+        public int DisneyCount()
         {
-            var mc = DisneyMoviesAndShows();
+            var mc = Disney();
             return mc.Count;
         }
 
@@ -455,6 +453,20 @@ namespace CharadeApp
             resultList.Add("Hodor");
             resultList.Add("Jaqen H'ghar");
             resultList.Add("Ghost");
+            resultList.Add("Unsullied");
+            resultList.Add("Night's Watch");
+            resultList.Add("Iron Throne");
+            resultList.Add("The High Sparrow");
+            resultList.Add("White Walkers");
+            resultList.Add("Hand of the King");
+            resultList.Add("The Mad King");
+            resultList.Add("Wildlings");
+            resultList.Add("Westeros");
+            resultList.Add("Castle Black");
+            resultList.Add("Winterfell");
+            resultList.Add("Kings Landing");
+
+
 
             return resultList;
         }
@@ -587,7 +599,20 @@ namespace CharadeApp
             resultList.Add("Rae Sloane");
             resultList.Add("Supreme Leader Snoke");
             resultList.Add("Yoda");
-            resultList.Add("Leia Organa");
+            resultList.Add("Princess Leia");
+            resultList.Add("Padawan");
+            resultList.Add("Jedi");
+            resultList.Add("Clone Trooper");
+            resultList.Add("Lightsaber");
+            resultList.Add("Millenium Falcon");
+            resultList.Add("Droid");
+            resultList.Add("AT-AT Walker");
+            resultList.Add("Sith");
+            resultList.Add("The Force");
+            resultList.Add("Death Star");
+            resultList.Add("Ewok");
+
+
 
             return resultList;
         }
@@ -728,6 +753,83 @@ namespace CharadeApp
             return res.Count;
         }
 
+        public List<string> HarryPotter()
+        {
+            List<string> resultList = new List<string>();
+            resultList.Add("Harry Potter");
+            resultList.Add("Sirius Black");
+            resultList.Add("Fleur Delacour");
+            resultList.Add("Cedric Diggory");
+            resultList.Add("Albus Dumbledore");
+            resultList.Add("Dudley Dursley");
+            resultList.Add("Vernon Dursley");
+            resultList.Add("Argus Filch");
+            resultList.Add("Seamus Finnigan");
+            resultList.Add("Professor Flitwick");
+            resultList.Add("Hermione Granger");
+            resultList.Add("Crabbe and Goyle");
+            resultList.Add("Godric Gryffindor");
+            resultList.Add("Madam Hooch");
+            resultList.Add("Rubeus Hagrid");
+            resultList.Add("Igor Karkaroff");
+            resultList.Add("Viktor Krum");
+            resultList.Add("Bellatrix Lestrange");
+            resultList.Add("Neville Longbottom");
+            resultList.Add("Luna Lovegood");
+            resultList.Add("Remus Lupin");
+            resultList.Add("Draco Malfoy");
+            resultList.Add("Lucius Malfoy");
+            resultList.Add("Alastor (Mad-Eye) Moody");
+            resultList.Add("Garrick Ollivander");
+            resultList.Add("Madam Pomfrey");
+            resultList.Add("James Potter");
+            resultList.Add("Lily Potter");
+            resultList.Add("Rowena Ravenclaw");
+            resultList.Add("Newt Scamander");
+            resultList.Add("Salazar Slytherin");
+            resultList.Add("Severus Snape");
+            resultList.Add("Professor Sprout");
+            resultList.Add("Dean Thomas");
+            resultList.Add("Lord Voldemort ");
+            resultList.Add("Ginny Weasley");
+            resultList.Add("Ron Weasley");
+            resultList.Add("Fred and George Weasley");
+            resultList.Add("Dobby");
+            resultList.Add("Fluffy");
+            resultList.Add("Fawkes - Phoenix");
+            resultList.Add("Hedwig");
+            resultList.Add("Nagini");
+            resultList.Add("Scrabbers");
+            resultList.Add("Trevor");
+            resultList.Add("Professor McGonagall");
+            resultList.Add("Arthur Weasley");
+            resultList.Add("Molly Weasley");
+            resultList.Add("Moaning Myrtle");
+            resultList.Add("Aragog");
+            resultList.Add("The Fat Lady");
+            resultList.Add("Nearly Headless Nick");
+            resultList.Add("Sorting Hat");
+            resultList.Add("Hogwarts");
+            resultList.Add("Whomping Willow");
+            resultList.Add("Mrs Norris");
+            resultList.Add("Muggle");
+            resultList.Add("Elder Wand");
+            resultList.Add("Cloak of Invisibility");
+            resultList.Add("Nicolas Flamel");
+            resultList.Add("Azkaban");
+            resultList.Add("Resurrection Stone");
+            resultList.Add("Gringotts");
+            resultList.Add("Forbidden Forrest");
+            resultList.Add("Hogwarts Express");
+
+            return resultList;
+        }
+
+        public int HarryPotterCount()
+        {
+            var res = HarryPotter();
+            return res.Count;
+        }
 
 
 

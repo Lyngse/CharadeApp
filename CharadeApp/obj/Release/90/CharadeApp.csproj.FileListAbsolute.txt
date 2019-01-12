@@ -4,6 +4,7 @@ D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.margretheskal.apk
 D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.margretheskal-Signed.apk
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\CharadeApp.nuget.stamp
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\CharadeApp.csprojAssemblyReference.cache
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\libraryimports.cache.stamp
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res.flag
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\CharadeApp.csproj.CoreCompileInputs.cache
@@ -35,14 +36,12 @@ D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\mipmap-xxxhdpi\ic_launcher
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\layout\category_card.xml
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\btn_play_style.xml
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\black_gradient.xml
-D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\leagueoflegends.jpg
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\layout\custompopup.xml
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\circlebackground.xml
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\btn_start_style.xml
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\disney.jpg
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\got.jpg
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\layout\active_game.xml
-D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\layout\active_timed_game.xml
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\btn_skip_style.xml
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\btn_next_style.xml
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\back_arrow.png
@@ -57,7 +56,6 @@ D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\layout\custom_category_pop
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\btn_add_style.xml
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\baseline_add_white_48dp.png
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\baseline_add_white_36dp.png
-D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\customitems.jpg
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\layout\splash_screen.xml
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\logo_200px.png
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\logo_round_96px.png
@@ -69,6 +67,17 @@ D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\movies.jpg
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\marvel.jpg
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\yoda.png
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\sport.jpg
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\leagueoflegends.png
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\customitems.png
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\mipmap-anydpi-v26\logo_round_border.png
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\mipmap-hdpi\logo_round_border.png
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\mipmap-mdpi\logo_round_border.png
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\mipmap-xhdpi\logo_round_border.png
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\mipmap-xxhdpi\logo_round_border.png
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\mipmap-xxxhdpi\logo_round_border.png
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable-xxhdpi\logo_200px.png
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable-xxhdpi\splash_screen.xml
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\harry_potter.jpg
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\R.cs.flag
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\R.txt
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\uploadflags.txt
@@ -123,6 +132,5 @@ D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\android\assets\System.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\android\assets\System.Runtime.Serialization.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\android\assets\System.Xml.Linq.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\android\assets\System.Xml.pdb
-D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\CharadeApp.csprojAssemblyReference.cache
 D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.dll
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\linksrc\margretheskal.dll.mdb

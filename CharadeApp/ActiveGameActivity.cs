@@ -78,14 +78,14 @@ namespace CharadeApp
             this.Window.AddFlags(WindowManagerFlags.LayoutInScreen);
             this.Window.AddFlags(WindowManagerFlags.KeepScreenOn);
 
-            int uiOptions = (int)Window.DecorView.SystemUiVisibility;
-            uiOptions |= (int)SystemUiFlags.LowProfile;
-            uiOptions |= (int)SystemUiFlags.Fullscreen;
-            uiOptions |= (int)SystemUiFlags.HideNavigation;
-            uiOptions |= (int)SystemUiFlags.Immersive;
-            uiOptions |= (int)SystemUiFlags.LayoutHideNavigation;
-            uiOptions |= (int)SystemUiFlags.ImmersiveSticky;
-            Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
+            //int uiOptions = (int)Window.DecorView.SystemUiVisibility;
+            //uiOptions |= (int)SystemUiFlags.LowProfile;
+            //uiOptions |= (int)SystemUiFlags.Fullscreen;
+            //uiOptions |= (int)SystemUiFlags.HideNavigation;
+            //uiOptions |= (int)SystemUiFlags.Immersive;
+            //uiOptions |= (int)SystemUiFlags.LayoutHideNavigation;
+            //uiOptions |= (int)SystemUiFlags.ImmersiveSticky;
+            //Window.DecorView.SystemUiVisibility = (StatusBarVisibility)uiOptions;
 
             confirmDialog = new Dialog(this);
             confirmDialog.SetContentView(Resource.Layout.back_confirm);
@@ -136,8 +136,11 @@ namespace CharadeApp
 
         private void OnTimedEvent(object sender, System.Timers.ElapsedEventArgs e)
         {
-            timeLeft--;
-            txtTimer.Text = timeLeft.ToString();
+            timeLeft--;        
+            RunOnUiThread(() =>
+            {
+                txtTimer.Text = timeLeft.ToString();
+            });
             if (timeLeft == 0)
             {
                 countDownTimer.Stop();
@@ -238,7 +241,10 @@ namespace CharadeApp
                     SkipItem(true);
                     skips = 3;
                     countDownTimer.Start();
-                    txtTimer.Text = timeLeft.ToString();
+                    RunOnUiThread(() =>
+                    {
+                        txtTimer.Text = timeLeft.ToString();
+                    });
                     newRoundDialog.Dismiss();
                 };
 

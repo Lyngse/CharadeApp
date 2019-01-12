@@ -3212,14 +3212,14 @@ namespace CharadeApp
 			// aapt resource value: 0x7F040002
 			public const int ic_launcher = 2130968578;
 			
-			// aapt resource value: 0x7F040004
-			public const int ic_launcher_foreground = 2130968580;
+			// aapt resource value: 0x7F040005
+			public const int ic_launcher_foreground = 2130968581;
 			
 			// aapt resource value: 0x7F040003
 			public const int ic_launcher_round = 2130968579;
 			
-			// aapt resource value: 0x7F040005
-			public const int logo_round_border = 2130968581;
+			// aapt resource value: 0x7F040004
+			public const int logo_round_border = 2130968580;
 			
 			static Mipmap()
 			{
