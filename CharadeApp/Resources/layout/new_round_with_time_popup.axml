@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="360dp"
+    android:layout_height="250dp"
+	android:background="@drawable/popup_background_style"
+	android:padding="5dp"
+	android:layout_gravity="center">
+	<TextView
+		android:id="@+id/nrwt_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:text="Hold 1 gør jer klar!"
+		android:textStyle="bold"
+		android:textColor="#fff"
+		android:textSize="26dp"
+		android:layout_gravity="center_horizontal"
+		android:gravity="center"
+		/>
+
+	<View
+		android:layout_width="wrap_content"
+		android:layout_marginLeft="25dp"
+		android:layout_marginRight="25dp"
+		android:layout_marginTop="15dp"
+		android:layout_marginBottom="10dp"
+		android:layout_height="2dp"
+		android:background="#eee" />
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_weight="1"
+			android:gravity="center">
+			<TextView
+				android:text="Hold 1"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:id="@+id/nrtw_team1"			
+				android:textColor="#fff"
+				android:textSize="22dp"/>
+			<TextView
+				android:text="0"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:id="@+id/nrtw_team1_score"			
+				android:textColor="#fff"
+				android:textSize="26dp"
+				android:textStyle="bold"/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_weight="1"
+			android:gravity="center">
+			<TextView
+				android:text="Hold 2"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:id="@+id/nrtw_team2"
+				android:textColor="#fff"
+				android:textSize="22dp"/>
+			<TextView
+				android:text="0"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:id="@+id/nrtw_team2_score"			
+				android:textColor="#fff"
+				android:textSize="26dp"
+				android:textStyle="bold"/>
+		</LinearLayout>
+		
+	</LinearLayout>
+	<View
+		android:layout_width="wrap_content"
+		android:layout_marginLeft="25dp"
+		android:layout_marginRight="25dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="20dp"
+		android:layout_height="2dp"
+		android:background="#eee" />
+	
+	<Button
+		android:id="@+id/start_nrwt_btn"
+		android:layout_width="200dp"
+		android:layout_height="wrap_content"
+		android:text="Start"
+		android:layout_gravity="center_horizontal"
+		android:background="@drawable/btn_start_style"
+		android:textColor="#fff"
+		android:textStyle="bold"/>
+
+</LinearLayout>

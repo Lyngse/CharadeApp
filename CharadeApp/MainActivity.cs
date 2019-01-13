@@ -172,11 +172,19 @@ namespace CharadeApp
             TextView txtClose;
             Button btnStart;
             TextView txtTitle;
+            RadioGroup radioGroup;
+            RadioButton rb30;
+            RadioButton rb60;
+            RadioButton rb90;
             bool isTimedGame = true;
 
             txtClose = (TextView)myDialog.FindViewById(Resource.Id.popup_close);
             btnStart = (Button)myDialog.FindViewById(Resource.Id.popup_start);
             txtTitle = (TextView)myDialog.FindViewById(Resource.Id.popup_title);
+            radioGroup = (RadioGroup)myDialog.FindViewById(Resource.Id.radioGroup1);
+            rb30 = (RadioButton)myDialog.FindViewById(Resource.Id.radioButton30);
+            rb60 = (RadioButton)myDialog.FindViewById(Resource.Id.radioButton60);
+            rb90 = (RadioButton)myDialog.FindViewById(Resource.Id.radioButton90);
 
             txtTitle.Text = category.Title;
             // Time switch
@@ -186,10 +194,12 @@ namespace CharadeApp
                 if (e.IsChecked == true)
                 {
                     isTimedGame = true;
+                    radioGroup.Visibility = ViewStates.Visible;
                 } 
                 else
                 {
                     isTimedGame = false;
+                    radioGroup.Visibility = ViewStates.Invisible;
                 }
             };
 
@@ -200,11 +210,18 @@ namespace CharadeApp
                 if (isTimedGame == true)
                 {
                     intent.PutExtra("withTime", "true");
+                    if (rb30.Checked == true)
+                        intent.PutExtra("time", 30);
+                    else if (rb60.Checked == true)
+                        intent.PutExtra("time", 60);
+                    else if (rb90.Checked == true)
+                        intent.PutExtra("time", 90);
                 }
                 else
                 {
                     intent.PutExtra("withTime", "false");
                 }
+
                 StartActivity(intent);
             };
 

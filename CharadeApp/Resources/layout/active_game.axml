@@ -50,7 +50,7 @@
 			android:id="@+id/active_game_btn_skip"
 			android:layout_width="120dp"
 			android:layout_height="wrap_content"
-			android:text="Skip"
+			android:text="Pas"
 			android:textColor="#fff"
 			android:textStyle="bold"
 			android:textSize="18dp"

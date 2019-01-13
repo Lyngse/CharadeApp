@@ -1,12 +1,12 @@
-D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.dll
-D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.pdb
-D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.margretheskal.apk
-D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.margretheskal-Signed.apk
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\CharadeApp.nuget.stamp
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\CharadeApp.csprojAssemblyReference.cache
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\libraryimports.cache.stamp
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res.flag
+D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.dll
+D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.pdb
+D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.margretheskal.apk
+D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.margretheskal-Signed.apk
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\CharadeApp.csproj.CoreCompileInputs.cache
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\margretheskal.dll
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\margretheskal.pdb
@@ -78,6 +78,9 @@ D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\mipmap-xxxhdpi\logo_round_
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable-xxhdpi\logo_200px.png
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable-xxhdpi\splash_screen.xml
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\harry_potter.jpg
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\layout\finished_game_with_time_popup.xml
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\layout\new_round_with_time_popup.xml
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\danish.png
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\R.cs.flag
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\R.txt
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\uploadflags.txt

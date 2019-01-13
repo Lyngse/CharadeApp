@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="300dp"
-    android:layout_height="250dp"
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="300dp"
+	android:layout_height="250dp"
 	android:background="@drawable/popup_background_style"
 	android:padding="5dp"
 	android:layout_gravity="center">
@@ -38,7 +39,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:orientation="horizontal"
-		android:layout_marginTop="30dp">
+		android:layout_marginTop="20dp">
 		<Switch
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -52,12 +53,50 @@
 			android:layout_marginRight="25dp"
 			android:layout_marginLeft="25dp"/>
 	</LinearLayout>
+	<RadioGroup
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_marginTop="5dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:id="@+id/radioGroup1">
+		<TextView
+			android:layout_marginTop="3dp"
+			android:text="Tid pr. runde:"
+			android:textColor="#fff"
+			android:textSize="16dp"
+			android:layout_gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/textView1" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#fff"
+			android:text="30s"
+			android:id="@+id/radioButton30" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#fff"
+			android:checked="true"
+			android:text="60s"
+			android:id="@+id/radioButton60" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#fff"
+			android:text="90s"
+			android:id="@+id/radioButton90" />
+	</RadioGroup>
 	<Button
 		android:id="@+id/popup_start"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="Start"
-		android:layout_marginTop="30dp"
+		android:layout_marginTop="15dp"
 		android:layout_gravity="center_horizontal"
 		android:background="@drawable/btn_start_style"
 		android:textColor="#fff"

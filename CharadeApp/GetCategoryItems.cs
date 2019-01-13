@@ -831,6 +831,90 @@ namespace CharadeApp
             return res.Count;
         }
 
+        public List<string> Danish()
+        {
+            List<string> resultList = new List<string>();
+            resultList.Add("Dronning Margrethe");
+            resultList.Add("Anders Matthesen");
+            resultList.Add("Anne Gadegaard");
+            resultList.Add("Fie Laursen");
+            resultList.Add("Inger Støjberg");
+            resultList.Add("Lars Løkke");
+            resultList.Add("Linse Kessler");
+            resultList.Add("Mikkel Kessler");
+            resultList.Add("Mads Mikkelsen");
+            resultList.Add("Mick Øgendahl");
+            resultList.Add("Peter Madsen");
+            resultList.Add("Rasmus Seebach");
+            resultList.Add("Chili Klaus");
+            resultList.Add("Caroline Wozniacki");
+            resultList.Add("Christian Eriksen");
+            resultList.Add("Michael Laudrup");
+            resultList.Add("Ole Henriksen");
+            resultList.Add("Peter Schmeichel");
+            resultList.Add("Viktor Axelsen");
+            resultList.Add("Mikkel Hansen");
+            resultList.Add("Lars Larsen");
+            resultList.Add("Rune Klan");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+            resultList.Add("");
+
+            return resultList;
+        }
+
+        public int DanishCount()
+        {
+            var res = Danish();
+            return res.Count;
+        }
+
 
 
         public void AddCustomCategoryItem(string input)

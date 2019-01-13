@@ -14,7 +14,7 @@ using Newtonsoft.Json;
 
 namespace CharadeApp
 {
-    [Activity(Label = "ActiveGameActivity", ScreenOrientation = ScreenOrientation.Landscape)]
+    [Activity(Label = "ActiveGameActivity", ScreenOrientation = ScreenOrientation.Landscape, NoHistory = true)]
     public class ActiveGameActivity : Activity
     {
         private List<string> categoryItems;
@@ -28,12 +28,16 @@ namespace CharadeApp
         private Dialog newRoundDialog;
         private Dialog finishedGameDialog;
         private System.Timers.Timer countDownTimer;
+        private int startTime;
         private int timeLeft;
         private TextView txtTimer;
         private bool isWithTime;
         private bool isConfirmOpen = false;
         private List<string> customItems;
         private int skips;
+        private int teamOneScore;
+        private int teamTwoScore;
+        private int currentTeam;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -51,6 +55,7 @@ namespace CharadeApp
             if (withTime == "true")
             {
                 isWithTime = true;
+                startTime = Intent.GetIntExtra("time", 60);
             }
             else
             {
@@ -100,15 +105,20 @@ namespace CharadeApp
 
             if (isWithTime)
             {
-                timeLeft = 60;
+                
+                timeLeft = startTime;
+                RunOnUiThread(() =>
+                {
+                    txtTimer.Text = timeLeft.ToString();
+                });
                 countDownTimer = new System.Timers.Timer();
                 countDownTimer.Interval = 1000;
                 countDownTimer.Elapsed += OnTimedEvent;
                 countDownTimer.Enabled = true;
-                countDownTimer.Start();
                 newRoundDialog = new Dialog(this);
                 newRoundDialog.SetContentView(Resource.Layout.new_round_popup);
-                skips = 3;
+                finishedGameDialog.SetContentView(Resource.Layout.finished_game_with_time_popup);
+                //skips = 3;
             }
             else
             {
@@ -132,6 +142,12 @@ namespace CharadeApp
                 isConfirmOpen = true;
                 ShowConfirmPopup();
             };
+
+            countDownTimer.Stop();
+            RunOnUiThread(() =>
+            {
+                ShowPopup("newRound");
+            });
         }
 
         private void OnTimedEvent(object sender, System.Timers.ElapsedEventArgs e)
@@ -177,33 +193,39 @@ namespace CharadeApp
         {
             if (categoryItems.Count > 1)
             {
-                if (isWithTime && fromNewRoundPopup == false)
-                {
-                    if (skips > 0)
-                    {
-                        ShuffleList();
-                        DrawItem();
-                        skips--;
-                        if (skips > 0)
-                            Toast.MakeText(this, "Du har " + skips.ToString() + " skips tilbage!", ToastLength.Short).Show();
-                        else
-                            Toast.MakeText(this, "Du har ikke flere skips tilbage!", ToastLength.Short).Show();
-                    }
-                    else
-                    {
-                        Toast.MakeText(this, "Du har ikke flere skips tilbage!", ToastLength.Short).Show();
-                    }
-                }
-                else
-                {
-                    ShuffleList();
-                    DrawItem();
-                }
-            }           
+                //if (isWithTime && fromNewRoundPopup == false)
+                //{
+                //    if (skips > 0)
+                //    {
+                //        ShuffleList();
+                //        DrawItem();
+                //        skips--;
+                //        if (skips > 0)
+                //            Toast.MakeText(this, "Du har " + skips.ToString() + " pas tilbage!", ToastLength.Short).Show();
+                //        else
+                //            Toast.MakeText(this, "Du har ikke flere pas tilbage!", ToastLength.Short).Show();
+                //    }
+                //    else
+                //    {
+                //        Toast.MakeText(this, "Du har ikke flere pas tilbage!", ToastLength.Short).Show();
+                //    }
+                //}
+                //else
+                //{
+                //    ShuffleList();
+                //    DrawItem();
+                //}
+                ShuffleList();
+                DrawItem();
+            }
         }
 
         private void NextItem()
         {
+            if (currentTeam == 1)
+                teamOneScore++;
+            else
+                teamTwoScore++;
             categoryItems.RemoveAt(0);
             if (categoryItems.Count == 1)
             {
@@ -227,19 +249,38 @@ namespace CharadeApp
         {
             if(popupType == "newRound")
             {
-                newRoundDialog.SetContentView(Resource.Layout.new_round_popup);
+                newRoundDialog.SetContentView(Resource.Layout.new_round_with_time_popup);
 
                 newRoundDialog.SetCanceledOnTouchOutside(false);
 
+                TextView txtTitle;
+                TextView t1s;
+                TextView t2s;
                 Button btnStart;
 
-                btnStart = (Button)newRoundDialog.FindViewById(Resource.Id.start_new_round_btn);
+                txtTitle = (TextView)newRoundDialog.FindViewById(Resource.Id.nrwt_text);
+                t1s = (TextView)newRoundDialog.FindViewById(Resource.Id.nrtw_team1_score);
+                t2s = (TextView)newRoundDialog.FindViewById(Resource.Id.nrtw_team2_score);
+                btnStart = (Button)newRoundDialog.FindViewById(Resource.Id.start_nrwt_btn);
+
+
+                t1s.Text = teamOneScore.ToString();
+                t2s.Text = teamTwoScore.ToString();
+                if (currentTeam == 1)
+                    currentTeam = 2;
+                else
+                    currentTeam = 1;
+
+                if (currentTeam == 1)
+                    txtTitle.Text = "Hold 1 gør jer klar!";
+                else
+                    txtTitle.Text = "Hold 2 gør jer klar!";
 
                 btnStart.Click += (o, e) =>
                 {
-                    timeLeft = 60;
+                    timeLeft = startTime;
                     SkipItem(true);
-                    skips = 3;
+                    //skips = 3;
                     countDownTimer.Start();
                     RunOnUiThread(() =>
                     {
@@ -252,17 +293,40 @@ namespace CharadeApp
             }
             else if(popupType == "finishedGame")
             {
-                finishedGameDialog.SetContentView(Resource.Layout.finished_game_popup);
-
-                finishedGameDialog.SetCanceledOnTouchOutside(false);
-
-                countDownTimer.Stop();
-
                 Button btnReplay;
                 Button btnMainMenu;
+                TextView txtTitle;
+                TextView t1s;
+                TextView t2s;
+                if (isWithTime)
+                {
+                    finishedGameDialog.SetContentView(Resource.Layout.finished_game_with_time_popup);
+                    countDownTimer.Stop();
+                    txtTitle = (TextView)finishedGameDialog.FindViewById(Resource.Id.fgwt_text);
+                    btnReplay = (Button)finishedGameDialog.FindViewById(Resource.Id.fgwt_start_new_game_btn);
+                    btnMainMenu = (Button)finishedGameDialog.FindViewById(Resource.Id.fgwt_main_menu_btn);
+                    t1s = (TextView)finishedGameDialog.FindViewById(Resource.Id.fgwt_team1_score);
+                    t2s = (TextView)finishedGameDialog.FindViewById(Resource.Id.fgwt_team2_score);
+                    RunOnUiThread(() =>
+                    {
+                        t1s.Text = teamOneScore.ToString();
+                        t2s.Text = teamTwoScore.ToString();
+                        if (teamOneScore > teamTwoScore)
+                            txtTitle.Text = "Hold 1 vandt!";
+                        else if (teamTwoScore > teamOneScore)
+                            txtTitle.Text = "Hold 2 vandt!";
+                        else
+                            txtTitle.Text = "Uafgjort!";
+                    });
+                }
+                else
+                {
+                    finishedGameDialog.SetContentView(Resource.Layout.finished_game_popup);
+                    btnReplay = (Button)finishedGameDialog.FindViewById(Resource.Id.start_new_game_btn);
+                    btnMainMenu = (Button)finishedGameDialog.FindViewById(Resource.Id.main_menu_btn);
+                }
 
-                btnReplay = (Button)finishedGameDialog.FindViewById(Resource.Id.start_new_game_btn);
-                btnMainMenu = (Button)finishedGameDialog.FindViewById(Resource.Id.main_menu_btn);
+                finishedGameDialog.SetCanceledOnTouchOutside(false);                
 
                 btnMainMenu.Click += (o, e) =>
                 {
@@ -287,9 +351,12 @@ namespace CharadeApp
                     DrawItem();
                     if(isWithTime)
                     {
-                        timeLeft = 60;
-                        skips = 3;
+                        timeLeft = startTime;
+                        //skips = 3;
                         countDownTimer.Start();
+                        teamOneScore = 0;
+                        teamTwoScore = 0;
+                        currentTeam = 1;
                     }
                     finishedGameDialog.Dismiss();
                 };
