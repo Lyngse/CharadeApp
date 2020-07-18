@@ -2374,14 +2374,17 @@ namespace CharadeApp
 			// aapt resource value: 0x7F010030
 			public const int Sport = 2130772016;
 			
+			// aapt resource value: 0x7F010031
+			public const int ThingsYouCanDo = 2130772017;
+			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
 			
 			// aapt resource value: 0x7F09006A
 			public const int tooltip_frame_light = 2131296362;
 			
-			// aapt resource value: 0x7F010031
-			public const int Yoda = 2130772017;
+			// aapt resource value: 0x7F010032
+			public const int Yoda = 2130772018;
 			
 			static Drawable()
 			{

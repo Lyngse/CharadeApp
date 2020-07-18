@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Newtonsoft.Json;
@@ -94,6 +90,7 @@ namespace CharadeApp
 
             confirmDialog = new Dialog(this);
             confirmDialog.SetContentView(Resource.Layout.back_confirm);
+            newRoundDialog = new Dialog(this);
             finishedGameDialog = new Dialog(this);
             finishedGameDialog.SetContentView(Resource.Layout.finished_game_popup);
 
@@ -143,11 +140,14 @@ namespace CharadeApp
                 ShowConfirmPopup();
             };
 
-            countDownTimer.Stop();
-            RunOnUiThread(() =>
+            if(isWithTime)
             {
-                ShowPopup("newRound");
-            });
+                countDownTimer.Stop();
+                RunOnUiThread(() =>
+                {
+                    ShowPopup("newRound");
+                });
+            } 
         }
 
         private void OnTimedEvent(object sender, System.Timers.ElapsedEventArgs e)
@@ -186,7 +186,6 @@ namespace CharadeApp
         private void DrawItem()
         {
             activeItem.Text = categoryItems[0];
-
         }
 
         private void SkipItem(bool fromNewRoundPopup = false)
@@ -262,7 +261,6 @@ namespace CharadeApp
                 t1s = (TextView)newRoundDialog.FindViewById(Resource.Id.nrtw_team1_score);
                 t2s = (TextView)newRoundDialog.FindViewById(Resource.Id.nrtw_team2_score);
                 btnStart = (Button)newRoundDialog.FindViewById(Resource.Id.start_nrwt_btn);
-
 
                 t1s.Text = teamOneScore.ToString();
                 t2s.Text = teamTwoScore.ToString();
@@ -347,6 +345,7 @@ namespace CharadeApp
                     {
                         categoryItems = gci.GetItems(categoryStringId);
                     }
+                    btnSkip.Enabled = true;
                     ShuffleList();
                     DrawItem();
                     if(isWithTime)
@@ -392,10 +391,7 @@ namespace CharadeApp
                     });
                 }
             };
-
             confirmDialog.Show();
         }
     }
-
-
 }

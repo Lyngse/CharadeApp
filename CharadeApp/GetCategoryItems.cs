@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
+﻿using System.Collections.Generic;
 
 namespace CharadeApp
 {
@@ -20,7 +10,7 @@ namespace CharadeApp
 
         }
 
-        // Good Luck (random shit), Lord of the Rings, Custom game, Memes, Lande, Erhverv, Serier, Brands
+        // Good Luck (random shit), Lord of the Rings, Custom game, Memes, Lande, Erhverv, Serier
 
         public List<string> GetItems(string categoryStringId)
         {
@@ -199,6 +189,13 @@ namespace CharadeApp
             resultList.Add("Ziggs");
             resultList.Add("Zilean");
             resultList.Add("Zoe");
+            resultList.Add("Sylas");
+            resultList.Add("Yuumi");
+            resultList.Add("Qiyana");
+            resultList.Add("Senna");
+            resultList.Add("Aphelios");
+            resultList.Add("Sett");
+            resultList.Add("Lillia");
 
             return resultList;
         }
@@ -548,7 +545,7 @@ namespace CharadeApp
             resultList.Add("Back to the Future");
             resultList.Add("Scarface");
             resultList.Add("Mission: Impossible");
-            resultList.Add("Dia Hard");
+            resultList.Add("Die Hard");
             resultList.Add("Dirty Dancing");
             resultList.Add("Grease");
             resultList.Add("Top Gun");
@@ -915,7 +912,83 @@ namespace CharadeApp
             return res.Count;
         }
 
+        public List<string> ThingYouCanDo()
+        {
+            List<string> resultList = new List<string>();
+            resultList.Add("Putte makeup på");
+            resultList.Add("Tage tøj på");
+            resultList.Add("Vaske hår");
+            resultList.Add("Få et baby til at bøvse");
+            resultList.Add("Snitte løg");
+            resultList.Add("Vaske gulv");
+            resultList.Add("Støvsuge");
+            resultList.Add("Rede en seng");
+            resultList.Add("Åbne et brev");
+            resultList.Add("Slå græsplænen");
+            resultList.Add("Binde sin sko");
+            resultList.Add("Spidse en blyant");
+            resultList.Add("Åbne en gave");
+            resultList.Add("Gå i kirke");
+            resultList.Add("Gå i fitness");
+            resultList.Add("Lave yoga");
+            resultList.Add("Danse salsa");
+            resultList.Add("Stepdanse");
+            resultList.Add("Danse ballet");
+            resultList.Add("Stå på snowboard");
+            resultList.Add("Stå på ski");
+            resultList.Add("Køre på mountainbike");
+            resultList.Add("Køre på rulleskøjter");
+            resultList.Add("Spille bowling");
+            resultList.Add("Være på jagt");
+            resultList.Add("Undervise");
+            resultList.Add("Klippe en andens hår");
+            resultList.Add("Blive anholdt");
+            resultList.Add("Spille badminton");
+            resultList.Add("Ridde på en hest");
+            resultList.Add("Lave pandekager");
+            resultList.Add("Spejle et æg");
+            resultList.Add("Gøre rent");
+            resultList.Add("Gå ud med skraldet");
+            resultList.Add("Komme for sent");
+            resultList.Add("Køre hurtigt");
+            resultList.Add("Gymnastik");
+            resultList.Add("Være en cirkusartist");
+            resultList.Add("Malke en ko");
+            resultList.Add("Se TV");
+            resultList.Add("Skovle sne");
+            resultList.Add("Gå tur med hunden");
+            resultList.Add("Klatre");
+            resultList.Add("Spise en banan");
+            resultList.Add("Lave en pizza");
+            resultList.Add("Få hjernefrys");
+            resultList.Add("Lege Spiderman");
+            resultList.Add("Karate");
+            resultList.Add("Imitere Michael Jackson");
+            resultList.Add("Sjippe");
+            resultList.Add("Være en T-rex");
+            resultList.Add("Være sur");
+            resultList.Add("Være overrasket");
+            resultList.Add("Være fuglekigger");
+            resultList.Add("Fælde et træ");
+            resultList.Add("Spille petanque");
+            resultList.Add("Hoppe på kængurustylte");
+            resultList.Add("Spille violin");
+            resultList.Add("Spille trækbasun");
+            resultList.Add("Skifte en ble");
+            resultList.Add("Spille pool");
+            resultList.Add("Faldskærmsudspring");
+            resultList.Add("Flyve i helikopter");
+            resultList.Add("Køre motorcross");
+            resultList.Add("Drikke vin");
 
+            return resultList;
+        }
+
+        public int ThingYouCanDoCount()
+        {
+            var res = ThingYouCanDo();
+            return res.Count;
+        }
 
         public void AddCustomCategoryItem(string input)
         {

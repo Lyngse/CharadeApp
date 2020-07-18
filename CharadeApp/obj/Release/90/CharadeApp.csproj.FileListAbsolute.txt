@@ -102,6 +102,7 @@ D:\Projekter\CharadeApp\CharadeApp\bin\Release\System.ComponentModel.Composition
 D:\Projekter\CharadeApp\CharadeApp\bin\Release\System.Web.Services.pdb
 D:\Projekter\CharadeApp\CharadeApp\bin\Release\System.Xml.Linq.pdb
 D:\Projekter\CharadeApp\CharadeApp\bin\Release\Mono.Security.pdb
+D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.dll.mdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\linksrc\Mono.Android.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\linksrc\mscorlib.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\linksrc\Newtonsoft.Json.pdb
@@ -121,7 +122,6 @@ D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\linksrc\System.Web.Services.pd
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\linksrc\System.Xml.Linq.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\linksrc\Mono.Security.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\linksrc\margretheskal.dll.mdb
-D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.dll.mdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\android\assets\margretheskal.dll.mdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\android\assets\Mono.Android.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\android\assets\Mono.Security.pdb
@@ -135,5 +135,6 @@ D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\android\assets\System.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\android\assets\System.Runtime.Serialization.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\android\assets\System.Xml.Linq.pdb
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\android\assets\System.Xml.pdb
+D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\res\drawable\thingsyoucando.jpg
 D:\Projekter\CharadeApp\CharadeApp\bin\Release\margretheskal.dll
 D:\Projekter\CharadeApp\CharadeApp\obj\Release\90\linksrc\margretheskal.dll.mdb

@@ -2227,26 +2227,26 @@ namespace CharadeApp
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f020088
-			public const int avd_hide_password_1 = 2130837640;
-			
 			// aapt resource value: 0x7f020089
-			public const int avd_hide_password_2 = 2130837641;
+			public const int avd_hide_password_1 = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int avd_hide_password_3 = 2130837642;
+			public const int avd_hide_password_2 = 2130837642;
+			
+			// aapt resource value: 0x7f02008b
+			public const int avd_hide_password_3 = 2130837643;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f02008b
-			public const int avd_show_password_1 = 2130837643;
-			
 			// aapt resource value: 0x7f02008c
-			public const int avd_show_password_2 = 2130837644;
+			public const int avd_show_password_1 = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int avd_show_password_3 = 2130837645;
+			public const int avd_show_password_2 = 2130837645;
+			
+			// aapt resource value: 0x7f02008e
+			public const int avd_show_password_3 = 2130837646;
 			
 			// aapt resource value: 0x7f020055
 			public const int back_arrow = 2130837589;
@@ -2368,11 +2368,11 @@ namespace CharadeApp
 			// aapt resource value: 0x7f02007c
 			public const int notification_icon_background = 2130837628;
 			
-			// aapt resource value: 0x7f020086
-			public const int notification_template_icon_bg = 2130837638;
-			
 			// aapt resource value: 0x7f020087
-			public const int notification_template_icon_low_bg = 2130837639;
+			public const int notification_template_icon_bg = 2130837639;
+			
+			// aapt resource value: 0x7f020088
+			public const int notification_template_icon_low_bg = 2130837640;
 			
 			// aapt resource value: 0x7f02007d
 			public const int notification_tile_bg = 2130837629;
@@ -2393,13 +2393,16 @@ namespace CharadeApp
 			public const int Sport = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int tooltip_frame_dark = 2130837635;
+			public const int ThingsYouCanDo = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int tooltip_frame_light = 2130837636;
+			public const int tooltip_frame_dark = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int Yoda = 2130837637;
+			public const int tooltip_frame_light = 2130837637;
+			
+			// aapt resource value: 0x7f020086
+			public const int Yoda = 2130837638;
 			
 			static Drawable()
 			{
@@ -2564,8 +2567,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7f08009b
 			public const int ccp_input = 2131230875;
 			
-			// aapt resource value: 0x7f08009f
-			public const int ccp_start = 2131230879;
+			// aapt resource value: 0x7f0800a4
+			public const int ccp_start = 2131230884;
 			
 			// aapt resource value: 0x7f08009a
 			public const int ccp_text = 2131230874;
@@ -2825,14 +2828,14 @@ namespace CharadeApp
 			// aapt resource value: 0x7f08004d
 			public const int pin = 2131230797;
 			
-			// aapt resource value: 0x7f0800a0
-			public const int popup_close = 2131230880;
+			// aapt resource value: 0x7f0800a5
+			public const int popup_close = 2131230885;
 			
 			// aapt resource value: 0x7f0800a7
 			public const int popup_start = 2131230887;
 			
-			// aapt resource value: 0x7f0800a1
-			public const int popup_title = 2131230881;
+			// aapt resource value: 0x7f0800a6
+			public const int popup_title = 2131230886;
 			
 			// aapt resource value: 0x7f080006
 			public const int progress_circular = 2131230726;
@@ -2843,17 +2846,17 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080075
 			public const int radio = 2131230837;
 			
-			// aapt resource value: 0x7f0800a4
-			public const int radioButton30 = 2131230884;
-			
-			// aapt resource value: 0x7f0800a5
-			public const int radioButton60 = 2131230885;
-			
-			// aapt resource value: 0x7f0800a6
-			public const int radioButton90 = 2131230886;
+			// aapt resource value: 0x7f0800a1
+			public const int radioButton30 = 2131230881;
 			
 			// aapt resource value: 0x7f0800a2
-			public const int radioGroup1 = 2131230882;
+			public const int radioButton60 = 2131230882;
+			
+			// aapt resource value: 0x7f0800a3
+			public const int radioButton90 = 2131230883;
+			
+			// aapt resource value: 0x7f08009f
+			public const int radioGroup1 = 2131230879;
 			
 			// aapt resource value: 0x7f080090
 			public const int recyclerView = 2131230864;
@@ -3014,8 +3017,8 @@ namespace CharadeApp
 			// aapt resource value: 0x7f080069
 			public const int textSpacerNoTitle = 2131230825;
 			
-			// aapt resource value: 0x7f0800a3
-			public const int textView1 = 2131230883;
+			// aapt resource value: 0x7f0800a0
+			public const int textView1 = 2131230880;
 			
 			// aapt resource value: 0x7f0800b5
 			public const int text_input_password_toggle = 2131230901;

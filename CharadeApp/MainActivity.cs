@@ -64,6 +64,7 @@ namespace CharadeApp
             categories.Add(new Category("LeagueOfLegends", Resource.Drawable.LeagueOfLegends, "League of Legends", gci.LeagueOfLegendsCount(), gci.LeagueOfLegends()));
             //categories.Add(new Category("DisneyCharacters", Resource.Drawable.Disney, "Disney karakterer", gci.DisneyCharactersCount(), gci.DisneyCharacters()));
             categories.Add(new Category("GameOfThrones", Resource.Drawable.GoT, "Game of Thrones", gci.GameOfThronesCount(), gci.GameOfThrones()));
+            categories.Add(new Category("ThingYouCanDo", Resource.Drawable.ThingsYouCanDo, "Ting du kan gøre eller lave", gci.ThingYouCanDoCount(), gci.ThingYouCanDo()));
             categories.Add(new Category("Professions", Resource.Drawable.professions, "Jobs", gci.ProfessionsCount(), gci.Professions()));
             categories.Add(new Category("Brands", Resource.Drawable.brands, "Brands", gci.BrandsCount(), gci.Brands()));
 
@@ -98,6 +99,10 @@ namespace CharadeApp
             ImageButton btnAdd;
             EditText inputField;
             TextView txtCardCount;
+            RadioGroup radioGroup;
+            RadioButton rb30;
+            RadioButton rb60;
+            RadioButton rb90;
             bool isTimedGame = true;
 
             txtClose = (TextView)customCategoryDialog.FindViewById(Resource.Id.ccp_close);
@@ -105,6 +110,10 @@ namespace CharadeApp
             btnAdd = (ImageButton)customCategoryDialog.FindViewById(Resource.Id.ccp_add);
             inputField = (EditText)customCategoryDialog.FindViewById(Resource.Id.ccp_input);
             txtCardCount = (TextView)customCategoryDialog.FindViewById(Resource.Id.ccp_card_count);
+            radioGroup = (RadioGroup)myDialog.FindViewById(Resource.Id.radioGroup1);
+            rb30 = (RadioButton)myDialog.FindViewById(Resource.Id.radioButton30);
+            rb60 = (RadioButton)myDialog.FindViewById(Resource.Id.radioButton60);
+            rb90 = (RadioButton)myDialog.FindViewById(Resource.Id.radioButton90);
 
             txtCardCount.Text = gci.CustomCategoryCount().ToString() + " kort";
 
@@ -114,10 +123,12 @@ namespace CharadeApp
                 if (e.IsChecked == true)
                 {
                     isTimedGame = true;
+                    radioGroup.Visibility = ViewStates.Visible;
                 }
                 else
                 {
                     isTimedGame = false;
+                    radioGroup.Visibility = ViewStates.Invisible;
                 }
             };
 
@@ -146,6 +157,12 @@ namespace CharadeApp
                     if (isTimedGame == true)
                     {
                         intent.PutExtra("withTime", "true");
+                        if (rb30.Checked == true)
+                            intent.PutExtra("time", 30);
+                        else if (rb60.Checked == true)
+                            intent.PutExtra("time", 60);
+                        else if (rb90.Checked == true)
+                            intent.PutExtra("time", 90);
                     }
                     else
                     {
@@ -153,7 +170,11 @@ namespace CharadeApp
                     }
                     //gci.ResetCustomCategory();
                     StartActivity(intent);
-                }            
+                }
+                else
+                {
+                    Toast.MakeText(this, "DU skal minimum have tilføjet ét kort", ToastLength.Short).Show();
+                }
             };
 
             txtClose.Click += (o, e) =>
